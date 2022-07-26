@@ -1,0 +1,40 @@
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 25px
+}
+.about-container {
+    margin: 5% auto
+}
+#about div {
+    flex: 1
+}
+#about img {
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px
+}
+.about-content {
+    font-family: OpenSans;
+    font-size: 1.1em;
+    color: #021016;
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-right: 5%
+}
+.about-content h3 {
+    font-size: 1.4em;
+    font-weight: 900
+}
+.about-content p {
+    line-height: 1.5;
+    color: #637381
+}
+@media (max-width: 768px) {
+    #about {
+        flex-direction: column;
+        zoom: 80%
+    }
+    .about-container img {
+        display: none
+    }
+}

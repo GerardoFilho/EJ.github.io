@@ -1,0 +1,246 @@
+@font-face {
+	font-family: 'OpenSans';
+	src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
+	font-size: 1em;
+}
+
+@font-face {
+	font-family: 'OpenSans-Light';
+	src: url("../fonts/Open_Sans/OpenSans-Light.ttf");
+	font-size: 1em;
+}
+
+
+body{
+    border-top: 200px;
+    border-top-color: #021016;
+    margin: 0px;
+    color: #021016;
+    font-family: 'OpenSans'
+}
+
+#nav_presentation{
+    background-color: rgba(158, 158, 158, 0.49);
+}
+
+#nav_presentation > img{
+    width: 200px;
+    margin-left: 50px;
+    padding: 25px;
+}
+
+#presentation_info{
+    float: right;
+    padding: 40px;
+}
+
+span.pipe{
+    font-size: 55px;
+    margin: 15px;
+}
+
+nav{
+    background-color: rgb(0, 39, 32);
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li{
+    display: inline-flex;
+    padding: 5px;
+    margin-right: 25px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#presentation div.texto{
+    position: absolute;
+    position: absolute;
+    padding: 100px;
+    top: 60%;
+    color: #fff;
+    text-shadow: black 0.1em 0.1em 0.6em;
+    font-family: sans-serif;
+}
+
+#presentation div.texto > strong{
+    font-size: 3.0em;
+}
+
+#presentation div.texto > p{
+    font-size: 1.5em;
+}
+
+#presentation > video {
+    width: 100%;
+
+}
+
+#presentation a.button{
+    position: absolute;
+    top: 103%;
+    left: 8%;
+    color: #f1f1f1;
+    text-decoration: none;
+    padding: 16px 30px;
+    background-color: rgb(55, 74, 83);
+    
+    border-radius: 5px;
+    font-family: 'OpenSans';
+    z-index: 1;
+    font-weight: 900;
+    margin-top: -1%;
+}
+
+#presentation a.button:hover{
+    background-color: #2a6a7c;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+
+#info{
+    background-color: #021016;
+    color: #fff;
+    width: 100%;
+    height: 200px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+#info div{
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-family: 'OpenSans';
+    padding-top: 30px;
+    font-weight: 900;
+}
+
+#about{
+    margin-bottom: 10%;
+}
+
+#about_us{
+    padding: 5%;
+    width: 40%;
+    font-family: 'OpenSans';
+    font-size: 1.2em;
+}
+
+#about_us > h4{
+    font-weight: 900;
+    
+}
+
+#about_us .button{
+    color: #f1f1f1;
+    text-decoration: none;
+    padding: 12px 30px;
+    background-color: rgb(55, 74, 83);
+    border-radius: 6px;
+}
+
+
+#contact{
+    padding: 1%;
+    width: 100%;
+    margin-top: 58px;
+    background-color: rgb(0, 39, 32);
+    color: white;
+    font-size: 1.2em;
+    font-family: 'OpenSans'
+}
+
+
+#contact h1, h5{
+    align-items: center;
+    text-align: center;
+}
+
+#btn_contato{
+    margin-left: 25%;
+    background-color: #e7164f;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 90px;
+    font-weight: 700;
+}
+
+#btn_contato:hover{
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    opacity: 0.9;
+}
+
+.input{
+    border-radius: 3px;
+    border-width: 0px;
+    padding: 7px;
+  }
+  
+  .input:focus{
+    border: solid 1px;
+    border-color: #e7164f;
+  }
+
+
+#contact .input{
+    width: 50%;
+    margin-left: 25%;
+}
+
+
+
+#map{
+    width: 100%;
+    height: 200px;
+}
+
+footer{
+    color: white;
+    height: 130px;
+    background-color :#021016;
+    padding: 4%;
+    align-items: center;
+    text-align: center; 
+}
+
+footer > div{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+#addresses{
+    width: 700px;
+    height: 85%;
+    text-decoration: none;
+}
+
+
+#addresses a:hover{
+    text-decoration: underline;
+}
+
+#address1{
+    float: left;
+}
+
+#address2{
+    float: right;
+}
+
+#cnpj{
+    clear: both;
+}
+
+

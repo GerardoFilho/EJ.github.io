@@ -1,0 +1,21 @@
+.clientes {
+    display: flex;
+    justify-content: space-around;
+
+}
+.clientes img {
+    background-color: #fff;
+    max-width: 184px;
+}
+
+@media screen and (max-width: 768px) {
+    .clientes {
+        display: flex;
+        justify-content: space-around;
+    
+    }
+    .clientes img {
+        background-color: #fff;
+        max-width: 110px;
+    }
+}

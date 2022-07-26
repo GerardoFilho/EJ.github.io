@@ -1,0 +1,41 @@
+.contact-back {
+  background: #021025;
+  padding: 25px;
+}
+
+.contact-content {
+  color: #fff;
+  font-family: sans-serif;
+}
+
+
+.contact-content form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 675.500px;
+  margin: 0px auto;
+}
+
+.contact-content form h1 {
+  font-size: 2em;
+}
+
+.contact-content form h5 {
+  font-size: 1.1em;
+  margin-top: 5px;
+}
+
+.contact-content input, .contact-content textarea {
+  width: 100%;
+  margin: 10px 0px;
+  padding: 10px;
+  border-radius: 2px;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .contact-back{
+    zoom: 85%;
+  }
+} 

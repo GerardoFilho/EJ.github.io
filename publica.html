@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>EJ | Gestão de Pública</title>
+    <meta name="author" content="Davi Cedraz">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta name="theme-color" content="rgba(158, 158, 158, 0.49)"> -->
+
+    <link rel="stylesheet" href="assets/dist/css/style.css">
+    <link rel="stylesheet" href="assets/dist/css/reset.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/dist/css/components/header.css">
+    <link rel="stylesheet" href="assets/dist/css/components/navbar.css">
+
+    <link rel="stylesheet" href="assets/dist/css/sections/services-grid.css">
+
+    <link rel="stylesheet" href="assets/dist/css/components/footer.css">
+    <link rel="stylesheet" href="assets/dist/css/components/buttons.css">
+    <link rel="stylesheet" href="assets/dist/css/components/map.css">
+
+    <link rel="stylesheet" href="assets/dist/css/components/card-info.css">
+    <link rel="stylesheet" href="assets/dist/css/sections/presentation.css">
+    <link rel="stylesheet" href="assets/dist/css/sections/contact.css">
+    <link rel="stylesheet" href="assets/dist/css/sections/float-whatsapp.css">
+
+
+    <link rel="stylesheet" href="assets/dist/media/icons/css/font-awesome.min.css">
+
+    <link rel="shortcut icon" href="icone.ico">
+</head>
+
+<style>
+    .mobileOnly{
+        display: none;
+    }
+    .desktopOnly{
+        display: block;
+    }
+    h1 {
+        text-align: center;
+        font-size: -webkit-xxx-large;
+    }
+    
+    .text-link {
+        text-decoration: none;
+        color: #9b9c9f;
+        font-weight: 900;
+    }
+    
+    .text-link:hover {
+        text-decoration: underline;
+    }
+    
+    .presentation-content {
+        background: url(assets/dist/media/images/congress.jpg) fixed;
+        /* color: #021016; */
+        color: #fff;
+        height: 300px;
+        /* padding: 170px 125px; */
+    }
+    
+    .presentation div.texto>strong {
+        font-size: 4.3em;
+    }
+    
+    .presentation div.texto>p {
+        font-size: 1.7em;
+    }
+    
+    .services-content {
+        color: #637381;
+    }
+    
+    .services-content h3 {
+        color: #021016;
+    }
+    
+    .service-title {
+        text-align: center;
+        font-size: 2.1em;
+        font-family: sans-serif;
+        color: #637381;
+    }
+    
+    .card-info {
+        background-color: #021016b0;
+        padding: 15px;
+    }
+    
+    .card-info-top {
+        margin-top: 0;
+        height: 70px;
+        background: #021016;
+    }
+    
+    .card-info-bottom {
+        background-image: url("assets/dist/media/images/Mulher.png");
+        background-position: right;
+        background-repeat: no-repeat;
+        background-position-y: 23%;
+        background-size: 14%;
+        background-color: #fff;
+        border-bottom: 8px solid #e7164f;
+        margin-bottom: 2%;
+        margin-top: 2%;
+    }
+    
+    .card-content {
+        font-size: 22px;
+        font-family: 'Montserrat';
+        color: #021016;
+        font-weight: 300;
+        text-transform: none;
+    }
+    
+    .card__image--river {
+        background: url(assets/dist/media/images/engineer-drawing.jpg);
+    }
+    
+    .card__image--record {
+        background: url(assets/dist/media/images/contract.jpg);
+    }
+    
+    .card__image--fence {
+        background: url(assets/dist/media/images/construction.jpg);
+    }
+    .infoRow {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 35px;
+        padding: 0 130px;
+        background-color: white;
+        align-items: center;
+        font-family: 'Montserrat';
+        font-weight: 300;
+    }
+    .infoRow img{
+        border-radius: 30px;
+        width: 30%;
+        max-height: 341px;
+    }
+    li {
+        list-style: none;
+        text-align: center;
+    }
+    .servico-container{
+        display: flex;
+        line-height: 20px;
+    }
+    .title-servico{
+        margin-bottom: 10px;
+    }
+    .li-left {
+        text-align: left;
+        width: 90%;
+    }
+    .li-left:hover {
+        font-weight: 700;
+        cursor: context-menu;
+    }
+
+    .li-right {
+        text-align: right;
+        width: 90%;
+    }
+    .li-right:hover {
+        font-weight: 700;
+        cursor: context-menu;
+    }
+    .border{
+        border-left: 2px solid #021016;
+    }
+    .card__title{
+        font-size: 1.7em;
+    }
+
+    
+    @media (max-width: 895px) {
+        .mobileOnly{
+            display: block;
+        }
+        .desktopOnly{
+            display: none;
+        }
+    }
+    @media (max-width: 768px) {
+        .about-content {
+            max-width: 100%;
+            zoom: 95%;
+        }
+        .about-container {
+            background: none;
+        }
+        .presentation div.texto>strong {
+            font-size: 2em;
+        }
+        .presentation div.texto>p {
+            font-size: 1em;
+        }
+        #services {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        #sustentabilidade-imagem {
+            display: none;
+        }
+        .services-container img {
+            border-radius: 0;
+        }
+        .card__title {
+            font-size: 1.2em;
+        }
+        .card__text {
+            font-size: 1em;
+        }
+        .card-content{
+            max-width: 400px;
+            margin-right: 81px;
+        }
+        .card-info-bottom {
+            background-size: contain;
+        }
+        .card-content{
+            font-size: 20px;
+        }
+    }
+</style>
+
+<body>
+
+    <div id='logo' class="logo-content">
+        <a href="./index.html">
+            <img src="assets/dist/media/images/logo.png" alt="EJ Engenharia Juridica Logo">
+        </a>
+    </div>
+    
+<nav id="nav-menu">
+    <div class="nav-icon-container">
+        <div id="nav-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="navbarContainer">
+
+        <ul class="nav-content nav-container">
+            
+            
+            <li>
+                <a href="./index.html" class="hvr-bounce-to-top">Início</a>
+            </li>
+            <li>
+                <a href="#about" class="hvr-bounce-to-top">Quem somos</a>
+            </li>
+            <li>
+                <a href="#service-box" class="hvr-bounce-to-top">Nossos Serviços</a>
+            </li>
+            <li>
+                <a href="#contact" class="hvr-bounce-to-top">Contato</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+    <!-- Start Whatsapp Button-->
+    <a class="whatsapp" href="https://web.whatsapp.com/send?phone=5588996710713" target="_blank">
+        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+
+    </a>
+    <!-- End Whatsapp Button-->
+
+
+    <section id="presentation" class="presentation">
+
+        <div class="presentation-container">
+
+            <div id="sustentabilidade-presentation" class="presentation-content">
+
+                <div class="texto">
+                    <strong>Suporte a Gestão <span>Pública</span></strong>
+                    <p> Diante das dificuldades e desafios exsurgidos das diversas esferas governamentais, somos o parceiro ideal de avanço estrutural, econômico e social.</p>
+                    <!-- <a href="#services" class="btn-primary">Nossos Serviços</a> -->
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="card-info card-info-top">
+        <div class="card-container">
+            <div class="card-content">
+                <!-- <p>Buscamos o cuidado e a qualidade nas relações diretas com meio ambiente com ênfase em uma melhor qualidade de vida para a comunidade</p> -->
+            </div>
+        </div>
+    </div>
+
+    <section class="desktopOnly">
+        <h2 class="service-title">SERVIÇOS</h2>
+        <ul>
+            <li>
+                <div class="infoRow">
+                    <img src="assets/dist/media/images/construction.jpg">
+                    <ul class="card__text backCard">
+                        <div class="card__title title-servico">Convênios e Obras Públicas</div>
+                        <div class="servico-container">
+                            <div>
+                                <li class="li-left">Captação de recursos a fundos perdidos</li>
+                                <li class="li-left">Auditoria em convênios vigentes e futuros</li>
+                                <li class="li-left">Habilitação dos convênios que apresentarem inconformidades e restrições</li>
+                                <li class="li-left">Desenvolvimento de ações de ressarcimento das obras paralisadas</li>
+                                <li class="li-left">Alimentação de sistemas de governo (SINCOV, SIMEC e SISMOB)</li>
+                                <li class="li-left">Agilidade de repasse financeiro das obras que estão em andamento</li>
+                            </div>
+                            <div class="border"></div>
+                            <div>
+                                <li class="li-right">Acompanhamento técnico-jurídico das obras contratadas e/ou convênios assinados </li>
+                                <li class="li-right">Comunicação direta com entes públicos da esfera municipal, estadual e federal</li>
+                                <li class="li-right">Suporte de serviços com despacho diretamente em Brasília</li>
+                                <li class="li-right">Redução de custos com tributos (taxas, impostos, alvarás, licenças)</li>
+                                <li class="li-right">Intermediação financeira de contratos públicos</li>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="infoRow">
+                    <ul class="card__text backCard">
+                        <div class="card__title">Consultoria e Assessoria Jurídica</div>
+                        <div class="servico-container">
+                            <div>
+                                <li class="li-left">Acesso a todas as licitações do mercado (convites, tomadas de preços, concorrências e pregões)</li>
+                                <li class="li-left">Retirada a análise minuciosa das condições do edital</li>
+                                <li class="li-left">Pesquisa acerca da situação financeira do órgão licitante</li>
+                            <li class="li-left">Atualização da documentação pertinente</li>
+                            <li class="li-left">Cadastro das empresas (CRC, SICAF e Outros)</li>
+                            <li class="li-left">Acompanhamento para o licitante nos procedimentos instaurados</li>
+                        </div>
+                        <div class="border"></div>
+                        <div>
+                            <li class="li-right">Relatórios das fases ínsitas a prestação do serviço desempenhado</li>
+                            <li class="li-right">Solução de eventuais dúvidas sobre a licitação</li>
+                            <li class="li-right">Elaboração dos envelopes da habilitação e propostas</li>
+                            <li class="li-right">Apresentação de impugnações e contrarrazões ao edital</li>
+                            <li class="li-right">Manuseio dos recursos administrativos cabíveis</li>
+                            <li class="li-right">Utilização das ferramentas judiciais disponíveis</li>
+                        </div>
+                    </div>
+                    </ul>
+                    <img src="assets/dist/media/images/contract.jpg">
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="mobileOnly">
+        <h2 class="service-title">SERVIÇOS</h2>
+        <ul class="cards">
+            <li class="cards__item">
+                <div class="card">
+                    <div class="card__image card__image--fence"></div>
+                    <div class="card__content">
+                        <div class="card__title">Convênios e Obras Públicas</div>
+                        <!-- <p class="card__text"> -->
+                        <ul class="card__text">
+                            <li>Captação de recursos a fundos perdidos</li>
+                            <li>Auditoria em convênios vigentes e futuros</li>
+                            <li>Habilitação dos convênios que apresentarem inconformidades e restrições</li>
+                            <li>Desenvolvimento de ações de ressarcimento das obras paralisadas</li>
+                            <li>Alimentação de sistemas de governo (SINCOV, SIMEC e SISMOB)</li>
+                            <li>Agilidade de repasse financeiro das obras que estão em andamento</li>
+                            <li>Acompanhamento técnico-jurídico das obras contratadas e/ou convênios assinados </li>
+                            <li>Comunicação direta com entes públicos da esfera municipal, estadual e federal</li>
+                            <li>Suporte de serviços com despacho diretamente em Brasília</li>
+                        </ul>
+                        <!-- </p> -->
+                        <!-- <button class="btn btn--block card__btn">Button</button> -->
+                    </div>
+                </div>
+            </li>
+            <!--<li class="cards__item">
+                <div class="card">
+                    <div class="card__image card__image--river"></div>
+                    <div class="card__content">
+                        <div class="card__title">Engenharia e Arquitetura</div>
+                        <ul class="card__text">
+                            <li>Desenvolvimento de projetos executivos e básicos</li>
+                            <li>Legalização e acompanhamento de obras públicas</li>
+                            <li>Estudos técnicos de projetos em convênios</li>
+                            <li>Análise de viabilidade financeira</li>
+                            <li>Adequação de projeto em faces das técnicas regionais</li>
+                            <li>Alteração para viabilidade orçamentária ao longo do convênio com legalização junto ao órgão conveniente</li>
+                        </ul>
+                        // <button class="btn btn--block card__btn">VER MAIS</button>
+                    </div>
+                </div>
+            </li> -->
+            <li class="cards__item">
+                <div class="card">
+                    <div class="card__image card__image--record"></div>
+                    <div class="card__content">
+                        <div class="card__title">Consultoria e Assessoria Jurídica</div>
+                        <ul class="card__text">
+                            <li>Acesso a todas as licitações do mercado (convites, tomadas de preços, concorrências e pregões)</li>
+                            <li>Retirada a análise minuciosa das condições do edital</li>
+                            <li>Pesquisa acerca da situação financeira do órgão licitante</li>
+                            <li>Atualização da documentação pertinente</li>
+                            <li>Cadastro das empresas (CRC, SICAF e Outros)</li>
+                            <li>Acompanhamento para o licitante nos procedimentos instaurados</li>
+                            <li>Relatórios das fases ínsitas a prestação do serviço desempenhado</li>
+                            <li>Solução de eventuais dúvidas sobre a licitação</li>
+                            <li>Elaboração dos envelopes da habilitação e propostas</li>
+                            <li>Apresentação de impugnações e contrarrazões ao edital</li>
+                            <li>Manuseio dos recursos administrativos cabíveis</li>
+                            <li>Utilização das ferramentas judiciais disponíveis</li>
+                        </ul>
+                        <!-- <button class="btn btn--block card__btn">Button</button> -->
+                    </div>
+                </div>
+            </li>
+            <!-- <li class="cards__item"> -->
+            <!-- <div class="card"> -->
+            <!-- <div class="card__image card__image--flowers"></div> -->
+            <!-- <div class="card__content"> -->
+            <!-- <div class="card__title">Flex Basis</div> -->
+            <!-- <p class="card__text">This defines the default size of an element before the remaining space is distributed. It can be a length (e.g. 20%, 5rem, etc.) or a keyword. The auto keyword means "look at my width or height property."</p> -->
+            <!-- <button class="btn btn--block card__btn">Button</button> -->
+            <!-- </div> -->
+            <!-- </div> -->
+            <!-- </li> -->
+        </ul>
+    </section>
+
+
+    <div class="card-info card-info-bottom">
+        <div class="card-container">
+            <div class="card-content">
+                <p>A EJ Engenharia Jurídica oferece acompanhamento, serviços de apoio e assessoria especializada, voltada à realidade de cada munícipio.</p>
+            </div>
+        </div>
+    </div>
+
+    <section id="contact" class="contact-back">
+        <div class="contact-content">
+            <form method="POST" action="mail.php">
+                <h1>CONTATO</h1>
+
+                <h5>"O que parece uma simples consulta, o tornará mais competitivo."</h5>
+
+                <input class="input" type="text" name="nome" id="nome" placeholder="Nome completo">
+                <input class="input" type="text" name="nome_empresa" id="nome_empresa" placeholder="Nome de sua empresa">
+                <input class="input" type="email" name="email" id="email" placeholder="Seu email">
+                <input class="input" type="text" name="subject" id="subject" placeholder="Assunto da mensagem">
+                <textarea class="input" name="message" id="message" cols="30" rows="10" placeholder="Digite aqui sua mensagem..."></textarea>
+                <button class="btn-secondary left larg" type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- <section id="map">
+        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d608.7762352143369!2d-38.37354007121604!3d-5.108446572814159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7bbe6cf620f291f%3A0xdb376d3724ae4428!2sR.+Damasceno+Gir%C3%A3o%2C+Morada+Nova+-+CE%2C+62940-000!5e0!3m2!1spt-BR!2sbr!4v1507342105725"
+            width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section> -->
+
+    <footer>
+        <div class="footer-content">
+
+            <div class="address">
+                
+                    <a href="tel:88996710713">
+                        <i class="fa fa-whatsapp" aria-hidden="true"></i> (88) 9 96710713
+                        <br>
+                        <a href="tel:88999004005"> <i class="fa fa-fax"> &nbsp;</i>Fone/Fax: (88) 9 99004005</a>
+                        <br />
+                        <a href="https://www.instagram.com/ejconsultoriaoficial/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i> ejconsultoriaoficial </a>
+                        <br>
+                        <a href="mailto:comercial@ejengenharia.com.br">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i> comercial@ejengenharia.com.br</a>
+                </p>
+            </div>
+
+            <!-- <span class="pipe">|</span>
+
+            <div class="address">
+                <p>SGAN, nº 220, Módulo C, Bloco B, Asa Norte
+                    <br> Brasília - Distrito Federal, CEP: 70790-123
+                    <br>
+                    <a href="tel:88999004005">Fone/Fax: (88) 9 99004005</a>
+                    <br>
+
+                </p>
+            </div> -->
+
+        </div>
+
+        <span id="cnpj">CNPJ: 22.212.407/0001-15</span>
+
+        <!-- <a id="123" target="_blank" href="http://www.davicedraz.com" style="float: right; color: white; text-decoration: none">
+            <p> <span class="title"><</span><span class="title"> / </span><span class="title">></span> </p>
+        </a> -->
+
+    </footer>
+    <script src="assets/dist/js/jquery/jquery-3.2.1.min.js"></script>
+    <script src="assets/dist/js/smooth-row.js"></script>
+    <script src="assets/dist/js/navbar.js"></script>
+    <script src="assets/dist/js/ScrollKeys.js"></script>
+</body>
+
+</html>

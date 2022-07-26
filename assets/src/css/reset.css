@@ -1,0 +1,12 @@
+body, ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img, video {
+  max-width: 100%;
+}

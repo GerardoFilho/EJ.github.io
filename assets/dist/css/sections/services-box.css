@@ -1,0 +1,154 @@
+.container {
+    padding-bottom: 5%;
+    font-family: OpenSans
+}
+.service-box-content,
+.service-icon {
+    width: 100%;
+    padding: 20px;
+    transition: all .5s ease;
+    text-align: center
+}
+.servicess {
+    display: flex;
+    flex-direction: column
+}
+.service-title {
+    text-align: center;
+    font-size: 2.1em;
+    font-family: sans-serif;
+    color: #637381
+}
+.service-group {
+    display: flex;
+    flex: 1
+}
+.service-box {
+    position: relative;
+    overflow: hidden;
+    perspective: 1000px;
+    -webkit-perspective: 1000px;
+    flex: 1
+}
+.service-icon {
+    height: 260px
+}
+.service-icon-background::before {
+    content: "";
+    background: rgba(0, 0, 0, .4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%
+}
+.background-01 {
+    background: url(../../media/images/tower-cranes.jpg) no-repeat;
+}
+.background-02 {
+    background: url(../../media/images/courtroom-interior.jpg) no-repeat;
+    background-size: 1000px
+}
+.background-03 {
+    background: url(../../media/images/building.jpg) no-repeat;
+    background-size: 1000px
+}
+.background-04 {
+    background: url(../../media/images/natures-tree-trees-railing.jpg) no-repeat;
+    background-size: 1000px
+}
+.service-box-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    height: 260px;
+    background-color: #021016;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    -webkit-transform: translateY(110px) rotateX(-90deg);
+    -moz-transform: translateY(110px) rotateX(-90deg);
+    -ms-transform: translateY(110px) rotateX(-90deg);
+    -o-transform: translateY(110px) rotateX(-90deg);
+    transform: translateY(110px) rotateX(-90deg)
+}
+.service-box .service-icon .front-content {
+    position: relative;
+    top: 100px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+.service-box .service-icon .front-content i {
+    font-size: 28px;
+    color: #fff;
+    font-weight: 400
+}
+.service-box .service-icon .front-content h3 {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 15px
+}
+.service-box .service-box-content h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 10px;
+    text-transform: uppercase
+}
+.service-box .service-box-content p {
+    font-size: 16px;
+    color: #b1b1b1;
+    margin: 0
+}
+.yellow {
+    background-color: #ffc000
+}
+.orange {
+    background-color: #fc7f0c
+}
+.red {
+    background-color: #e84b3a
+}
+.grey {
+    background-color: #474747
+}
+.service-box:hover .service-icon {
+    opacity: 0;
+    -webkit-transform: translateY(-110px) rotateX(90deg);
+    -moz-transform: translateY(-110px) rotateX(90deg);
+    -ms-transform: translateY(-110px) rotateX(90deg);
+    -o-transform: translateY(-110px) rotateX(90deg);
+    transform: translateY(-110px) rotateX(90deg)
+}
+.service-box:hover .service-box-content {
+    opacity: 1;
+    -webkit-transform: rotateX(0);
+    -moz-transform: rotateX(0);
+    -ms-transform: rotateX(0);
+    -o-transform: rotateX(0);
+    transform: rotateX(0)
+}
+@media (max-width: 576px) {
+    .service-group {
+        flex-direction: column
+    }
+    .service-title {
+        font-size: 1.4em
+    }
+    .service-box {
+        margin-bottom: 1%
+    }
+    .service-box .service-box-content p {
+        font-size: 14px
+    }
+}
+@media (max-width: 768px) {
+    .servicess {
+        flex-direction: column
+    }
+}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>EJ | Quem somos</title>
+    <meta name="author" content="Davi Cedraz">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta name="theme-color" content="rgba(158, 158, 158, 0.49)"> -->
+
+    <link rel="stylesheet" href="assets/dist/css/style.css">
+    <link rel="stylesheet" href="assets/dist/css/reset.css">
+
+    <link rel="stylesheet" href="assets/dist/css/components/header.css">
+    <link rel="stylesheet" href="assets/dist/css/components/navbar.css">
+    <link rel="stylesheet" href="assets/dist/css/components/footer.css">
+    <link rel="stylesheet" href="assets/dist/css/components/buttons.css">
+    <link rel="stylesheet" href="assets/dist/css/components/map.css">
+
+    <link rel="stylesheet" href="assets/dist/css/sections/about.css">
+    <link rel="stylesheet" href="assets/dist/css/sections/contact.css">
+    <link rel="stylesheet" href="assets/dist/css/sections/float-whatsapp.css">
+
+    <link rel="stylesheet" href="assets/dist/media/icons/css/font-awesome.min.css">
+
+    <link rel="shortcut icon" href="icone.ico">
+</head>
+
+<style>
+    .text-link {
+        text-decoration: none;
+        color: #637381;
+    }
+    
+    .text-link:hover {
+        text-decoration: underline;
+    }
+    
+    .about-content {
+        max-width: 65%;
+        padding-left: 5%;
+        padding-top: 3%;
+    }
+    
+    .about-container {
+        margin-bottom: 0;
+        margin-top: 0;
+        max-width: 100%;
+        background: url(assets/dist/media/images/about-background2.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    @media (max-width: 768px) {
+        .about-content {
+            max-width: 100%;
+            zoom: 95%;
+        }
+        .about-container {
+            background: none;
+        }
+    }
+</style>
+
+<body>
+
+    <!-- Start Whatsapp Button-->
+    <a class="whatsapp" href="https://web.whatsapp.com/send?phone=5588996710713" target="_blank">
+        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+
+    </a>
+    <!-- End Whatsapp Button-->
+
+    <div id='logo' class="logo-content">
+        <a href="./index.html">
+            <img src="assets/dist/media/images/logo.png" alt="EJ Engenharia Juridica Logo">
+        </a>
+    </div>
+    
+<nav id="nav-menu">
+    <div class="nav-icon-container">
+        <div id="nav-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="navbarContainer">
+
+        <ul class="nav-content nav-container">
+            
+            
+            <li>
+                <a href="./index.html" class="hvr-bounce-to-top">Início</a>
+            </li>
+            <li>
+                <a href="#about" class="hvr-bounce-to-top">Quem somos</a>
+            </li>
+            <li>
+                <a href="#service-box" class="hvr-bounce-to-top">Nossos Serviços</a>
+            </li>
+            <li>
+                <a href="#contact" class="hvr-bounce-to-top">Contato</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+    <section id="about" class="about about-container">
+        <div class="about-content">
+            <h3>EJ Engenharia Jurídica</h3>
+
+            <p>
+                Com inutito de apoiar, bem como tornar os empreendedores mais competitivos. A EJ-Engenharia Jurídica, Apresenta os serviços de
+                <strong><a class="text-link" href="empreendimentos.html">Gestão de Empreedimentos</a></strong> destinados ao fortalecimento empresarial, adminsitrativo e operacional.
+            </p>
+
+            <p>
+                Diante das dificuldades e desafios das imposições fiscalizatórias, tecnlógicas e financeiras das difersas esferas governamentais, oferecemos também consultoria e acessoria em apoio a
+                <strong> <a class="text-link" href="publica.html">Gestão Pública</a> </strong>.
+            </p>
+
+            <p>
+                Com serviços de acompanhamento de obras via sistemas de monitoramento, análise de viabilidade técnica dos recursos conveniados e o desempenho de consultoria e assessoria jurídica especializada, buscamos ser parceiros no ideal de avanço estrutural, econômico
+                e social, viabilizando o crescimento daqueles que buscam o desenvolvimento e desburocratização.
+            </p>
+
+            <br>
+
+            <a href="index.html#service-box" class="btn-primary">Nossos serviços</a>
+
+            <br>
+            <br>
+
+        </div>
+
+    </section>
+
+    <section id="contact" class="contact-back">
+        <div class="contact-content">
+            <form method="POST" action="mail.php">
+                <h1>CONTATO</h1>
+
+                <h5>"O que parece uma simples consulta, o tornará mais competitivo."</h5>
+
+                <input class="input" type="text" name="nome" id="nome" placeholder="Nome completo">
+                <input class="input" type="text" name="nome_empresa" id="nome_empresa" placeholder="Nome de sua empresa">
+                <input class="input" type="email" name="email" id="email" placeholder="Seu email">
+                <input class="input" type="text" name="subject" id="subject" placeholder="Assunto da mensagem">
+                <textarea class="input" name="message" id="message" cols="30" rows="10" placeholder="Digite aqui sua mensagem..."></textarea>
+                <button class="btn-secondary left larg" type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- <section id="map">
+        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d608.7762352143369!2d-38.37354007121604!3d-5.108446572814159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7bbe6cf620f291f%3A0xdb376d3724ae4428!2sR.+Damasceno+Gir%C3%A3o%2C+Morada+Nova+-+CE%2C+62940-000!5e0!3m2!1spt-BR!2sbr!4v1507342105725"
+            width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section> -->
+
+    <footer>
+        <div class="footer-content">
+
+            <div class="address">
+                
+                    <a href="tel:88996710713">
+                        <i class="fa fa-whatsapp" aria-hidden="true"></i> (88) 9 96710713
+                        <br>
+                        <a href="tel:88999004005"> <i class="fa fa-fax"> &nbsp;</i>Fone/Fax: (88) 9 99004005</a>
+                        <br />
+                        <a href="https://www.instagram.com/ejconsultoriaoficial/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i> ejconsultoriaoficial </a>
+                        <br>
+                        <a href="mailto:comercial@ejengenharia.com.br">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i> comercial@ejengenharia.com.br</a>
+                </p>
+            </div>
+
+            <!-- <span class="pipe">|</span>
+
+            <div class="address">
+                <p>SGAN, nº 220, Módulo C, Bloco B, Asa Norte
+                    <br> Brasília - Distrito Federal, CEP: 70790-123
+                    <br>
+                    <a href="tel:88999004005">Fone/Fax: (88) 9 99004005</a>
+                    <br>
+
+                </p>
+            </div> -->
+
+        </div>
+
+        <span id="cnpj">CNPJ: 22.212.407/0001-15</span>
+
+        <!-- <a id="123" target="_blank" href="http://www.davicedraz.com" style="float: right; color: white; text-decoration: none">
+            <p> <span class="title"><</span><span class="title"> / </span><span class="title">></span> </p>
+        </a> -->
+
+    </footer>
+    <script src="assets/dist/js/jquery/jquery-3.2.1.min.js"></script>
+    <script src="assets/dist/js/navbar.js"></script>
+    <script src="assets/dist/js/smooth-row.js"></script>
+    <script src="assets/dist/js/ScrollKeys.js"></script>
+
+
+</body>
+
+</html>

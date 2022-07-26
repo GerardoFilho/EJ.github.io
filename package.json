@@ -1,0 +1,32 @@
+{
+  "name": "EngenhariaJuridica",
+  "version": "1.0.0",
+  "description": "Site institucional da empresa Engenharia Juridica",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dist": "gulp connect",
+    "dev": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davicedraz/EngenhariaJuridica.git"
+  },
+  "keywords": [],
+  "author": "Davi Cedraz, Leo Jaimesson",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/davicedraz/EngenhariaJuridica/issues"
+  },
+  "homepage": "https://github.com/davicedraz/EngenhariaJuridica#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-image": "^2.10.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-webserver": "^0.9.1"
+  }
+}

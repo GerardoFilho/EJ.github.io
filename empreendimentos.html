@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>EJ | Gestão de Empreendimentos</title>
+    <meta name="author" content="Davi Cedraz">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta name="theme-color" content="rgba(158, 158, 158, 0.49)"> -->
+
+    <link rel="stylesheet" href="assets/dist/css/style.css">
+    <link rel="stylesheet" href="assets/dist/css/reset.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/dist/css/components/header.css">
+    <link rel="stylesheet" href="assets/dist/css/components/navbar.css">
+
+    <link rel="stylesheet" href="assets/dist/css/sections/services-grid.css">
+
+    <link rel="stylesheet" href="assets/dist/css/components/footer.css">
+    <link rel="stylesheet" href="assets/dist/css/components/buttons.css">
+    <link rel="stylesheet" href="assets/dist/css/components/map.css">
+
+    <link rel="stylesheet" href="assets/dist/css/components/card-info.css">
+    <link rel="stylesheet" href="assets/dist/css/sections/presentation.css">
+    <link rel="stylesheet" href="assets/dist/css/sections/contact.css">
+    <link rel="stylesheet" href="assets/dist/css/sections/float-whatsapp.css">
+
+
+    <link rel="stylesheet" href="assets/dist/media/icons/css/font-awesome.min.css">
+
+    <link rel="shortcut icon" href="icone.ico">
+</head>
+
+<style>
+    p{
+        font-family: 'Montserrat';
+    }
+     .mobileOnly{
+        display: none;
+    }
+    .desktopOnly{
+        display: block;
+    }
+    h1 {
+        text-align: center;
+        font-size: -webkit-xxx-large;
+    }
+    
+    .text-link {
+        text-decoration: none;
+        color: #9b9c9f;
+        font-weight: 900;
+    }
+    
+    .text-link:hover {
+        text-decoration: underline;
+    }
+    
+    .presentation-content {
+        background: url(assets/dist/media/images/gestao.jpg) fixed;
+        color: #fff;
+        height: 300px;
+        /* padding: 170px 125px; */
+    }
+    
+    .presentation div.texto>strong {
+        font-size: 4.3em;
+    }
+    
+    .presentation div.texto>p {
+        font-size: 1.7em;
+    }
+    
+    .services-content {
+        color: #637381;
+    }
+    
+    .services-content h3 {
+        color: #021016;
+    }
+    
+    .service-title {
+        text-align: center;
+        font-size: 2.1em;
+        font-family: sans-serif;
+        color: white;
+        background-color:gray;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 25px;
+    }
+    
+    .card-info {
+        background-color: #021016b0;
+        padding: 15px;
+    }
+    
+    .card-info-top {
+        margin-top: 0;
+        margin-bottom: 0;
+        height: 20px;
+        background: white;
+        
+    }
+    
+    .card-info-bottom {
+        background-image: url("assets/dist/media/images/Mulher.png");
+        background-position: right;
+        background-repeat: no-repeat;
+        background-position-y: 23%;
+        background-size: 14%;
+        background-color: #fff;
+        border-bottom: 8px solid #e7164f;
+        margin-bottom: 2%;
+        margin-top: 2%;
+    }
+    
+    .card-content {
+        font-size: 22px;
+        font-family: 'Montserrat';
+        color: #021016;
+        font-weight: 300;
+        text-transform: none;
+    }
+
+    .infoRow {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 35px;
+        padding: 0 130px;
+        background-color: white;
+        color: gray;
+        align-items: center;
+        font-family: 'Montserrat';
+        font-weight: bold;
+    }
+    .infoRow img{
+        border-radius: 30px;
+        width: 40%;
+        max-height: 341px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+ 
+
+    @media (max-width: 895px) {
+        .mobileOnly{
+            display: block;
+        }
+        .desktopOnly{
+            display: none;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .about-content {
+            max-width: 100%;
+            zoom: 95%;
+        }
+        .about-container {
+            background: none;
+        }
+        .presentation div.texto>strong {
+            font-size: 2em;
+            
+        }
+        .presentation div.texto>p {
+            font-size: 1em;
+           
+        }
+       
+        #services {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        #sustentabilidade-imagem {
+            display: none;
+        }
+        .services-container img {
+            border-radius: 0;
+        }
+        .card__title {
+            font-size: 1.2em;
+            
+        }
+        .card__text {
+            font-size: 1em;
+        }
+        .card_title{
+            font-size: 50px;
+        }
+        .card-content{
+            max-width: 400px;
+        }
+        .card-info-bottom {
+            background-size: contain;
+        }
+        .card-content{
+            font-size: 20px;
+        }
+    }
+</style>
+
+<body>
+
+    <!-- Start Whatsapp Button-->
+    <a class="whatsapp" href="https://web.whatsapp.com/send?phone=5588996710713" target="_blank">
+        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+
+    </a>
+    <!-- End Whatsapp Button-->
+
+    <!-- <header id="top">
+        <div class="header-content header-container">
+            <div>
+                <a href="">
+                    <img src="assets/dist/media/images/logoColor.png" alt="EJ Engenharia Juridica Logo">
+                </a>
+            </div>
+
+            <div class="header-info">
+
+                <a target="blank" href="https://www.facebook.com/ejengenhariajuridica/">
+                    <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+                </a>
+
+                <a target="blank" href="https://www.linkedin.com/company/27133355/">
+                    <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+                </a>
+
+                <a target="blank" href="https://www.instagram.com/ej.engenhariajuridica/">
+                    <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                </a>
+
+
+            </div>
+        </div>
+    </header> -->
+
+        <div id='logo' class="logo-content">
+            <a href="./index.html">
+                <img src="assets/dist/media/images/logo.png" alt="EJ Engenharia Juridica Logo">
+            </a>
+        </div>
+        
+    <nav id="nav-menu">
+        <div class="nav-icon-container">
+            <div id="nav-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="navbarContainer">
+
+            <ul class="nav-content nav-container">
+                
+                
+                <li>
+                    <a href="./index.html" class="hvr-bounce-to-top">Início</a>
+                </li>
+                <li>
+                    <a href="#about" class="hvr-bounce-to-top">Quem somos</a>
+                </li>
+                <li>
+                    <a href="#service-box" class="hvr-bounce-to-top">Nossos Serviços</a>
+                </li>
+                <li>
+                    <a href="#contact" class="hvr-bounce-to-top">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section id="presentation" class="presentation">
+
+        <div class="presentation-container">
+
+            <div id="sustentabilidade-presentation" class="presentation-content">
+
+                <div class="texto">
+                    <strong>Serviços de Gestão de <span>Empreendimentos</span></strong>
+                    <p> <strong>Para apoiar e tornar seu negócio mais competitivo.</strong></p>
+                    <!-- <a href="#services" class="btn-primary">Nossos Serviços</a> -->
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="card-info card-info-top">
+        <div class="card-container">
+            <div class="card-content">
+                <!-- <p>Buscamos o cuidado e a qualidade nas relações diretas com meio ambiente com ênfase em uma melhor qualidade de vida para a comunidade</p> -->
+            </div>
+        </div>
+    </div>
+<section>
+    <div class="container-ideia">
+    <div class="texto-ideia">
+    <div class="container-img-mobile">
+    <p class="title-ideia">Nossa ideia</p>
+    <img  class="img-mobile"src="./assets/dist/media/images/lampada.png">
+       </div>
+    <p class="description-ideia">Pesquisa inédita do Ipea realizada em
+        2019, mostrou que das mais de 820 mil
+        organizações da sociedade civil (OSCs)
+        em atividade no Brasil, somente (2,7%)
+        receberam recursos federais entre 2010
+        e 2018. o que equivale a R$ 118,5
+        bilhões de reais.
+    </p>
+    <p class="description-ideia">Com a informação do Ipea, decidimos
+            montar um “time” que fosse capaz de
+            mobilizar recursos para organizações
+            sem fins lucrativo em apoio à sua
+            finalidade principal.</p>
+    </div>
+    <div>
+        <img class="img-ideia" src="./assets/dist/media/images/lampada.png">
+        </div>
+            
+        </div>
+</section>
+
+<section class="mobileOnly">
+    <h2 class="service-title">SERVIÇOS</h2>
+    <ul class="cards">
+        <li class="cards__item">
+            <div class="card">
+                <div class="card__image card__image--fence"></div>
+                <div class="card__content">
+                    <div class="card__title">Planejamento Estratégico</div>
+                    <!-- <p class="card__text"> -->
+                    <ul class="card__text">
+                        <li>Plano de negócio</li>
+                        <li>Modelo de negócio</li>
+                        <li>Consulta mercadológica/pesquisa de mercado</li>
+                        <li>Plano de gerenciamento de tempo</li>
+                        <li>Formação de preços</li>
+                        <li>Estudo de viabilidade técnica e jurídica</li>
+                        <li>Estudo de viabilidade econômica e financeira</li>
+                        <li>Estudo de viabilidade sociambiental</li>
+                        <li>Avaliação do ponto comercial</li>
+                    </ul>
+                    <!-- </p> -->
+                    <!-- <button class="btn btn--block card__btn">Button</button> -->
+                </div>
+            </div>
+        </li>
+        <li class="cards__item">
+            <div class="card">
+                <div class="card__image card__image--river"></div>
+                <div class="card__content">
+                    <div class="card__title">Recursos Humanos</div>
+                    <ul class="card__text">
+                        <li>Análise e descrição de cargos</li>
+                        <li>Pesquisa de clima organizacional</li>
+                        <li>Recrutamento e seleção</li>
+                    </ul>
+                    <!-- <button class="btn btn--block card__btn">Button</button> -->
+                </div>
+            </div>
+        </li>
+        <li class="cards__item">
+            <div class="card">
+                <div class="card__image card__image--record"></div>
+                <div class="card__content">
+                    <div class="card__title">Gestão e Consultorias</div>
+                    <ul class="card__text">
+                        <li>Gestão de financiamento e empréstimos públicos</li>
+                        <li>Gerenciamento Eletrônico de Documentos (GED)</li>
+                        <li>Consulta patrimonial</li>
+                        <li>Gerenciamento de mão de obra especializada, técnica e profissional</li>
+                        <li>Consultoria de implantação e otimização de ponto de comércio</li>
+                        <li>Preparação de documentos</li>
+                        <li>Despacho</li>
+                    </ul>
+                    <!-- <button class="btn btn--block card__btn">Button</button> -->
+                </div>
+            </div>
+        </li>
+        <li class="cards__item">
+            <div class="card">
+                <img src="./assets/dist/media/images/solucao.jpg">
+                <div class="card__content">
+                    <div class="card__title">Soluções para organizações da sociedade civil</div>
+                    <ul class="card__text">
+                        <li>Regularização para promoção ao
+                            recebimento de valores das Leis de
+                            incentivos</li>
+                        <li>Desenvolvimento de Plano de
+                            Trabalho, execução e prestação de
+                            contas de projetos de Emenda
+                            Parlamentar</li>
+                        <li>Monitoramento de Plataforma Mais
+                            Brasil – SICONV</li>
+                        <li>Consultoria na elaboração de
+                            projeto para participar de editais
+                            privados e governamental</li>
+                        <li>Certificações e cadastros (Cebas,
+                            Cneas, cadastros em conselhos etc)</li>
+                        <li>Monitoramento de regularidade
+                            fiscal</li>
+                        <li>Atualização estatutário conforme os
+                            requisitos para celebração de
+                            parcerias exigidos pela Lei
+                            13.019/2014</li>
+                            <li>Construções financiada / moradia/
+                                habitação</li>
+                    </ul>
+                    <!-- <button class="btn btn--block card__btn">Button</button> -->
+                </div>
+            </div>
+        </li>
+        <!-- <li class="cards__item"> -->
+        <!-- <div class="card"> -->
+        <!-- <div class="card__image card__image--flowers"></div> -->
+        <!-- <div class="card__content"> -->
+        <!-- <div class="card__title">Flex Basis</div> -->
+        <!-- <p class="card__text">This defines the default size of an element before the remaining space is distributed. It can be a length (e.g. 20%, 5rem, etc.) or a keyword. The auto keyword means "look at my width or height property."</p> -->
+        <!-- <button class="btn btn--block card__btn">Button</button> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </li> -->
+    </ul>
+</section>
+<section class="desktopOnly">
+        <h2 class="service-title">SERVIÇOS</h2>
+        <ul>
+            <li>
+                <div class="infoRow">
+                    <img src="./assets/dist/media/images/solucao.jpg">
+                    <ul class="card__text backCard">
+                        <h2 class="card_title">Soluções para organizações da sociedade civil</h2>
+
+                        <li >Regularização para promoção ao
+                            recebimento de valores das Leis de
+                            incentivos</li>
+                            <li >Desenvolvimento de Plano de
+                            Trabalho, execução e prestação de
+                            contas de projetos de Emenda
+                            Parlamentar</li>
+                            <li >Monitoramento de Plataforma Mais
+                                Brasil – SICONV</li>
+                                <li >Consultoria na elaboração de
+                                    projeto para participar de editais
+                                    privados e governamental</li>
+                                    <li >Certificações e cadastros (Cebas,
+                                        Cneas, cadastros em conselhos etc)
+                                        </li>
+                                        <li >Monitoramento de regularidade
+                                            fiscal</li>
+                                        <li >Atualização estatutário conforme os
+                                            requisitos para celebração de
+                                            parcerias exigidos pela Lei
+                                            13.019/2014</li>
+                                            <li >Construções financiada / moradia/
+                                                habitação</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="infoRow">
+                    <ul class="card__text backCard">
+                        <h2 class="card_title">Gestão e Consultorias</h2>
+                        <li >Gestão de financiamento e empréstimos públicos</li>
+                                <li >Gerenciamento Eletrônico de Documentos (GED)</li>
+                                <li >Consulta patrimonial</li>
+                                    <li >Gerenciamento de mão de obra especializada, técnica e profissional</li>
+                                        <li >Consultoria de implantação e otimização de ponto de comércio
+                                            </li>
+                                            <li >Preparação de documentos</li>
+                                            <li >Despacho</li>
+                    </ul>
+                    <img src="./assets/src/media/images/insurance.jpg">
+                </div>
+            </li>
+            <li>
+                <div class="infoRow">
+                    <img src="./assets/src/media/images/people.jpg">
+                    <ul class="card__text backCard">
+                        <h2 class="card_title">Recursos Humanos</h2>
+
+                        <li >Análise e descrição de cargos</li>
+                        <li >Pesquisa de clima organizacional</li>
+                        <li >Recrutamento e seleção</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="infoRow">
+                    <ul class="card__text backCard">
+                        <h2 class="card_title">Planejamento Estratégico</h2>
+                        <li>Plano de negócio</li>
+                                                                                <li>Modelo de negócio</li>
+                                                                                <li>Consulta mercadológica/pesquisa de mercado</li>
+                                                                                <li >Plano de gerenciamento de tempo</li>
+                                                                                <li >Formação de preços</li>
+                                                                                <li >Estudo de viabilidade técnica e jurídica</li>
+                                                                                <li >Estudo de viabilidade econômica e financeira</li>
+                                                                                <li>Estudo de viabilidade sociambiental</li>
+                                                                                <li>Avaliação do ponto comercial</li>
+                    </ul>
+                    <img src="./assets/src/media/images/empresa2.jpg">
+                </div>
+            </li>
+            
+        </ul>
+    </section>
+    <!--  -->
+
+
+    <div class="card-info card-info-bottom">
+        <div class="card-container">
+            <div class="card-content">
+                <p>A EJ Engenharia Juridica conta com uma equipe multidisciplinar de profissionais. Conheça nossos outros <strong><a class="text-link" href="index.html#service-box">Serviços</a></strong></p>
+            </div>
+        </div>
+    </div>
+
+    <section id="contact" class="contact-back">
+        <div class="contact-content">
+            <form method="POST" action="mail.php">
+                <h1>CONTATO</h1>
+
+                <h5>"O que parece uma simples consulta, o tornará mais competitivo."</h5>
+
+                <input class="input" type="text" name="nome" id="nome" placeholder="Nome completo">
+                <input class="input" type="text" name="nome_empresa" id="nome_empresa" placeholder="Nome de sua empresa">
+                <input class="input" type="email" name="email" id="email" placeholder="Seu email">
+                <input class="input" type="text" name="subject" id="subject" placeholder="Assunto da mensagem">
+                <textarea class="input" name="message" id="message" cols="30" rows="10" placeholder="Digite aqui sua mensagem..."></textarea>
+                <button class="btn-secondary left larg" type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- <section id="map">
+        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d608.7762352143369!2d-38.37354007121604!3d-5.108446572814159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7bbe6cf620f291f%3A0xdb376d3724ae4428!2sR.+Damasceno+Gir%C3%A3o%2C+Morada+Nova+-+CE%2C+62940-000!5e0!3m2!1spt-BR!2sbr!4v1507342105725"
+            width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section> -->
+
+    <footer>
+        <div class="footer-content">
+
+            <div class="address">
+                
+                    <a href="tel:88996710713">
+                        <i class="fa fa-whatsapp" aria-hidden="true"></i> (88) 9 96710713
+                        <br>
+                        <a href="tel:88999004005"> <i class="fa fa-fax"> &nbsp;</i>Fone/Fax: (88) 9 99004005</a>
+                        <br />
+                        <a href="https://www.instagram.com/ejconsultoriaoficial/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i> ejconsultoriaoficial </a>
+                        <br>
+                        <a href="mailto:comercial@ejengenharia.com.br">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i> comercial@ejengenharia.com.br</a>
+                </p>
+            </div>
+
+            <!-- <span class="pipe">|</span>
+
+            <div class="address">
+                <p>SGAN, nº 220, Módulo C, Bloco B, Asa Norte
+                    <br> Brasília - Distrito Federal, CEP: 70790-123
+                    <br>
+                    <a href="tel:88999004005">Fone/Fax: (88) 9 99004005</a>
+                    <br>
+
+                </p>
+            </div> -->
+
+        </div>
+
+        <span id="cnpj">CNPJ: 22.212.407/0001-15</span>
+
+        <!-- <a id="123" target="_blank" href="http://www.davicedraz.com" style="float: right; color: white; text-decoration: none">
+            <p> <span class="title"><</span><span class="title"> / </span><span class="title">></span> </p>
+        </a> -->
+
+    </footer>
+    <script src="assets/dist/js/jquery/jquery-3.2.1.min.js"></script>
+    <script src="assets/dist/js/smooth-row.js"></script>
+    <script src="assets/dist/js/navbar.js"></script>
+    <script src="assets/dist/js/ScrollKeys.js"></script>
+</body>
+
+</html>

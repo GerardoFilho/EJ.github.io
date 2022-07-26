@@ -1,0 +1,1 @@
+!function(e){e(document).ready(function(){e(".carroussel").slick({infinite:!0,adaptiveHeight:!1,autoplay:!0,autoplaySpeed:3e3,speed:800,fade:!0,arrows:!0,prevArrow:".presentation-controls #control-left",nextArrow:".presentation-controls #control-right"})})}(jQuery);
