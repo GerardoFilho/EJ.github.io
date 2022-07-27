@@ -84,7 +84,11 @@
         text-align: center;
         font-size: 2.1em;
         font-family: sans-serif;
-        color: #637381;
+        color: white;
+        background-color:gray;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 25px;
     }
     
     .card-info {
@@ -94,8 +98,9 @@
     
     .card-info-top {
         margin-top: 0;
-        height: 70px;
-        background: #021016;
+        margin-bottom: 0;
+        height: 20px;
+        background: white;
     }
     
     .card-info-bottom {
@@ -141,12 +146,15 @@
     }
     .infoRow img{
         border-radius: 30px;
-        width: 30%;
+        width: 40%;
         max-height: 341px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+       
     }
     li {
         list-style: none;
-        text-align: center;
+        
     }
     .servico-container{
         display: flex;
@@ -154,10 +162,14 @@
     }
     .title-servico{
         margin-bottom: 10px;
+        
     }
     .li-left {
         text-align: left;
         width: 90%;
+        margin-left: 20px;
+        margin-right: 100px;
+        
     }
     .li-left:hover {
         font-weight: 700;
@@ -165,18 +177,23 @@
     }
 
     .li-right {
-        text-align: right;
-        width: 90%;
+        text-align: left;
+        width: 100%;
+        margin-left: 20px;
+        
+        
     }
     .li-right:hover {
         font-weight: 700;
         cursor: context-menu;
     }
     .border{
-        border-left: 2px solid #021016;
+        border-left: 2px solid #e7164f;
+       
     }
     .card__title{
         font-size: 1.7em;
+        margin-bottom: 30px;
     }
 
     
@@ -187,6 +204,17 @@
         .desktopOnly{
             display: none;
         }
+        .border{
+       
+       margin-left: -15px;
+       
+   }
+   .item-mobile{
+       margin-left: 20px;
+   }
+   .card__title{
+    margin-bottom: 5px;
+   }
     }
     @media (max-width: 768px) {
         .about-content {
@@ -214,9 +242,14 @@
         }
         .card__title {
             font-size: 1.2em;
+            margin-bottom: 5px;
+            
+            
         }
+        
         .card__text {
             font-size: 1em;
+            
         }
         .card-content{
             max-width: 400px;
@@ -228,6 +261,15 @@
         .card-content{
             font-size: 20px;
         }
+        .border{
+       
+       margin-left: -20px;
+       
+   }
+   .item-mobile{
+       margin-left: 20px;
+   }
+     
     }
 </style>
 
@@ -259,10 +301,10 @@
                 <a href="./index.html" class="hvr-bounce-to-top">Início</a>
             </li>
             <li>
-                <a href="#about" class="hvr-bounce-to-top">Quem somos</a>
+                <a href="./about.html" class="hvr-bounce-to-top">Quem somos</a>
             </li>
             <li>
-                <a href="#service-box" class="hvr-bounce-to-top">Nossos Serviços</a>
+                <a href="index.html#service-box" class="hvr-bounce-to-top">Nossos Serviços</a>
             </li>
             <li>
                 <a href="#contact" class="hvr-bounce-to-top">Contato</a>
@@ -314,6 +356,7 @@
                     <ul class="card__text backCard">
                         <div class="card__title title-servico">Convênios e Obras Públicas</div>
                         <div class="servico-container">
+                            <div class="border"></div>
                             <div>
                                 <li class="li-left">Captação de recursos a fundos perdidos</li>
                                 <li class="li-left">Auditoria em convênios vigentes e futuros</li>
@@ -339,6 +382,7 @@
                     <ul class="card__text backCard">
                         <div class="card__title">Consultoria e Assessoria Jurídica</div>
                         <div class="servico-container">
+                            <div class="border"></div>
                             <div>
                                 <li class="li-left">Acesso a todas as licitações do mercado (convites, tomadas de preços, concorrências e pregões)</li>
                                 <li class="li-left">Retirada a análise minuciosa das condições do edital</li>
@@ -346,9 +390,6 @@
                             <li class="li-left">Atualização da documentação pertinente</li>
                             <li class="li-left">Cadastro das empresas (CRC, SICAF e Outros)</li>
                             <li class="li-left">Acompanhamento para o licitante nos procedimentos instaurados</li>
-                        </div>
-                        <div class="border"></div>
-                        <div>
                             <li class="li-right">Relatórios das fases ínsitas a prestação do serviço desempenhado</li>
                             <li class="li-right">Solução de eventuais dúvidas sobre a licitação</li>
                             <li class="li-right">Elaboração dos envelopes da habilitação e propostas</li>
@@ -356,9 +397,10 @@
                             <li class="li-right">Manuseio dos recursos administrativos cabíveis</li>
                             <li class="li-right">Utilização das ferramentas judiciais disponíveis</li>
                         </div>
+                       
                     </div>
-                    </ul>
-                    <img src="assets/dist/media/images/contract.jpg">
+                </ul>
+                <img src="assets/dist/media/images/contract.jpg">
                 </div>
             </li>
         </ul>
@@ -374,16 +416,17 @@
                         <div class="card__title">Convênios e Obras Públicas</div>
                         <!-- <p class="card__text"> -->
                         <ul class="card__text">
-                            <li>Captação de recursos a fundos perdidos</li>
-                            <li>Auditoria em convênios vigentes e futuros</li>
-                            <li>Habilitação dos convênios que apresentarem inconformidades e restrições</li>
-                            <li>Desenvolvimento de ações de ressarcimento das obras paralisadas</li>
-                            <li>Alimentação de sistemas de governo (SINCOV, SIMEC e SISMOB)</li>
-                            <li>Agilidade de repasse financeiro das obras que estão em andamento</li>
-                            <li>Acompanhamento técnico-jurídico das obras contratadas e/ou convênios assinados </li>
-                            <li>Comunicação direta com entes públicos da esfera municipal, estadual e federal</li>
-                            <li>Suporte de serviços com despacho diretamente em Brasília</li>
-                        </ul>
+                            <div class="border">
+                            <li class="item-mobile">Captação de recursos a fundos perdidos</li>
+                            <li class="item-mobile">Auditoria em convênios vigentes e futuros</li>
+                            <li class="item-mobile">Habilitação dos convênios que apresentarem inconformidades e restrições</li>
+                            <li class="item-mobile">Desenvolvimento de ações de ressarcimento das obras paralisadas</li>
+                            <li class="item-mobile">Alimentação de sistemas de governo (SINCOV, SIMEC e SISMOB)</li>
+                            <li class="item-mobile">Agilidade de repasse financeiro das obras que estão em andamento</li>
+                            <li class="item-mobile">Acompanhamento técnico-jurídico das obras contratadas e/ou convênios assinados </li>
+                            <li class="item-mobile">Comunicação direta com entes públicos da esfera municipal, estadual e federal</li>
+                            <li class="item-mobile">Suporte de serviços com despacho diretamente em Brasília</li>
+                       </div> </ul>
                         <!-- </p> -->
                         <!-- <button class="btn btn--block card__btn">Button</button> -->
                     </div>
@@ -412,19 +455,20 @@
                     <div class="card__content">
                         <div class="card__title">Consultoria e Assessoria Jurídica</div>
                         <ul class="card__text">
-                            <li>Acesso a todas as licitações do mercado (convites, tomadas de preços, concorrências e pregões)</li>
-                            <li>Retirada a análise minuciosa das condições do edital</li>
-                            <li>Pesquisa acerca da situação financeira do órgão licitante</li>
-                            <li>Atualização da documentação pertinente</li>
-                            <li>Cadastro das empresas (CRC, SICAF e Outros)</li>
-                            <li>Acompanhamento para o licitante nos procedimentos instaurados</li>
-                            <li>Relatórios das fases ínsitas a prestação do serviço desempenhado</li>
-                            <li>Solução de eventuais dúvidas sobre a licitação</li>
-                            <li>Elaboração dos envelopes da habilitação e propostas</li>
-                            <li>Apresentação de impugnações e contrarrazões ao edital</li>
-                            <li>Manuseio dos recursos administrativos cabíveis</li>
-                            <li>Utilização das ferramentas judiciais disponíveis</li>
-                        </ul>
+                            <div class="border">
+                            <li class="item-mobile">Acesso a todas as licitações do mercado (convites, tomadas de preços, concorrências e pregões)</li>
+                            <li class="item-mobile">Retirada a análise minuciosa das condições do edital</li>
+                            <li class="item-mobile">Pesquisa acerca da situação financeira do órgão licitante</li>
+                            <li class="item-mobile">Atualização da documentação pertinente</li>
+                            <li class="item-mobile">Cadastro das empresas (CRC, SICAF e Outros)</li>
+                            <li class="item-mobile">Acompanhamento para o licitante nos procedimentos instaurados</li>
+                            <li class="item-mobile">Relatórios das fases ínsitas a prestação do serviço desempenhado</li>
+                            <li class="item-mobile">Solução de eventuais dúvidas sobre a licitação</li>
+                            <li class="item-mobile">Elaboração dos envelopes da habilitação e propostas</li>
+                            <li class="item-mobile">Apresentação de impugnações e contrarrazões ao edital</li>
+                            <li class="item-mobile">Manuseio dos recursos administrativos cabíveis</li>
+                            <li class="item-mobile">Utilização das ferramentas judiciais disponíveis</li>
+                        </div></ul>
                         <!-- <button class="btn btn--block card__btn">Button</button> -->
                     </div>
                 </div>

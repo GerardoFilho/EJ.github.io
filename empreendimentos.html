@@ -132,10 +132,10 @@
         margin-bottom: 35px;
         padding: 0 130px;
         background-color: white;
-        color: gray;
+    
         align-items: center;
         font-family: 'Montserrat';
-        font-weight: bold;
+        font-weight: 300;
     }
     .infoRow img{
         border-radius: 30px;
@@ -143,6 +143,50 @@
         max-height: 341px;
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+    .li-left {
+        text-align: left;
+        width: 90%;
+        margin-left: 20px;
+        margin-right: 100px;
+        
+    }
+    .li-left:hover {
+        font-weight: 700;
+        cursor: context-menu;
+    }
+
+    .li-right {
+        text-align: left;
+        width: 100%;
+        margin-left: 20px;
+        
+        
+    }
+    .li-right:hover {
+        font-weight: 700;
+        cursor: context-menu;
+    }
+    .border{
+        border-left: 2px solid #e7164f;
+        
+    }
+    .card__title{
+        font-size: 1.7em;
+        margin-bottom: 30px;
+       
+    }
+    .servico-container{
+        display: flex;
+        line-height: 20px;
+    }
+    li {
+        list-style: none;
+       
+    }
+    .title-servico{
+        margin-bottom: 10px;
+        color: #696969;
     }
  
 
@@ -153,6 +197,17 @@
         .desktopOnly{
             display: none;
         }
+        .border{
+       
+       margin-left: -15px;
+       
+   }
+   .item-mobile{
+       margin-left: 20px;
+   }
+   .card__title{
+    margin-bottom: 5px;
+   }
     }
     
     @media (max-width: 768px) {
@@ -184,6 +239,7 @@
         }
         .card__title {
             font-size: 1.2em;
+            margin-bottom: 5px;
             
         }
         .card__text {
@@ -191,16 +247,31 @@
         }
         .card_title{
             font-size: 50px;
+           
         }
         .card-content{
-            max-width: 400px;
+            width: 80%;
+            font-size: 17px;
+            margin-left: 0;
+           
+            
         }
         .card-info-bottom {
             background-size: contain;
         }
-        .card-content{
-            font-size: 20px;
-        }
+       
+
+        .border{
+       
+        margin-left: -20px;
+        
+    }
+    .item-mobile{
+        margin-left: 20px;
+    }
+      .texto{
+        font-size: 12px;
+      }
     }
 </style>
 
@@ -266,10 +337,10 @@
                     <a href="./index.html" class="hvr-bounce-to-top">Início</a>
                 </li>
                 <li>
-                    <a href="#about" class="hvr-bounce-to-top">Quem somos</a>
+                    <a href="./about.html" class="hvr-bounce-to-top">Quem somos</a>
                 </li>
                 <li>
-                    <a href="#service-box" class="hvr-bounce-to-top">Nossos Serviços</a>
+                    <a href="index.html#service-box" class="hvr-bounce-to-top">Nossos Serviços</a>
                 </li>
                 <li>
                     <a href="#contact" class="hvr-bounce-to-top">Contato</a>
@@ -342,16 +413,17 @@
                     <div class="card__title">Planejamento Estratégico</div>
                     <!-- <p class="card__text"> -->
                     <ul class="card__text">
-                        <li>Plano de negócio</li>
-                        <li>Modelo de negócio</li>
-                        <li>Consulta mercadológica/pesquisa de mercado</li>
-                        <li>Plano de gerenciamento de tempo</li>
-                        <li>Formação de preços</li>
-                        <li>Estudo de viabilidade técnica e jurídica</li>
-                        <li>Estudo de viabilidade econômica e financeira</li>
-                        <li>Estudo de viabilidade sociambiental</li>
-                        <li>Avaliação do ponto comercial</li>
-                    </ul>
+                        <div class="border">
+                        <li class="item-mobile">Plano de negócio</li>
+                        <li class="item-mobile">Modelo de negócio</li>
+                        <li class="item-mobile">Consulta mercadológica/pesquisa de mercado</li>
+                        <li class="item-mobile">Plano de gerenciamento de tempo</li>
+                        <li class="item-mobile">Formação de preços</li>
+                        <li class="item-mobile">Estudo de viabilidade técnica e jurídica</li>
+                        <li class="item-mobile">Estudo de viabilidade econômica e financeira</li>
+                        <li class="item-mobile">Estudo de viabilidade sociambiental</li>
+                        <li class="item-mobile">Avaliação do ponto comercial</li>
+                    </div></ul>
                     <!-- </p> -->
                     <!-- <button class="btn btn--block card__btn">Button</button> -->
                 </div>
@@ -363,10 +435,11 @@
                 <div class="card__content">
                     <div class="card__title">Recursos Humanos</div>
                     <ul class="card__text">
-                        <li>Análise e descrição de cargos</li>
-                        <li>Pesquisa de clima organizacional</li>
-                        <li>Recrutamento e seleção</li>
-                    </ul>
+                        <div class="border">
+                        <li class="item-mobile">Análise e descrição de cargos</li>
+                        <li class="item-mobile">Pesquisa de clima organizacional</li>
+                        <li class="item-mobile">Recrutamento e seleção</li>
+                    </div></ul>
                     <!-- <button class="btn btn--block card__btn">Button</button> -->
                 </div>
             </div>
@@ -377,13 +450,15 @@
                 <div class="card__content">
                     <div class="card__title">Gestão e Consultorias</div>
                     <ul class="card__text">
-                        <li>Gestão de financiamento e empréstimos públicos</li>
-                        <li>Gerenciamento Eletrônico de Documentos (GED)</li>
-                        <li>Consulta patrimonial</li>
-                        <li>Gerenciamento de mão de obra especializada, técnica e profissional</li>
-                        <li>Consultoria de implantação e otimização de ponto de comércio</li>
-                        <li>Preparação de documentos</li>
-                        <li>Despacho</li>
+                        <div class="border">
+                        <li class="item-mobile">Gestão de financiamento e empréstimos públicos</li>
+                        <li class="item-mobile">Gerenciamento Eletrônico de Documentos (GED)</li>
+                        <li class="item-mobile">Consulta patrimonial</li>
+                        <li class="item-mobile">Gerenciamento de mão de obra especializada, técnica e profissional</li>
+                        <li class="item-mobile">Consultoria de implantação e otimização de ponto de comércio</li>
+                        <li class="item-mobile">Preparação de documentos</li>
+                        <li class="item-mobile">Despacho</li>
+                        </div>
                     </ul>
                     <!-- <button class="btn btn--block card__btn">Button</button> -->
                 </div>
@@ -395,28 +470,30 @@
                 <div class="card__content">
                     <div class="card__title">Soluções para organizações da sociedade civil</div>
                     <ul class="card__text">
-                        <li>Regularização para promoção ao
+                        <div class="border">
+                        <li class="item-mobile">Regularização para promoção ao
                             recebimento de valores das Leis de
                             incentivos</li>
-                        <li>Desenvolvimento de Plano de
+                        <li class="item-mobile">Desenvolvimento de Plano de
                             Trabalho, execução e prestação de
                             contas de projetos de Emenda
                             Parlamentar</li>
-                        <li>Monitoramento de Plataforma Mais
+                        <li class="item-mobile">Monitoramento de Plataforma Mais
                             Brasil – SICONV</li>
-                        <li>Consultoria na elaboração de
+                        <li class="item-mobile">Consultoria na elaboração de
                             projeto para participar de editais
                             privados e governamental</li>
-                        <li>Certificações e cadastros (Cebas,
+                        <li class="item-mobile">Certificações e cadastros (Cebas,
                             Cneas, cadastros em conselhos etc)</li>
-                        <li>Monitoramento de regularidade
+                        <li class="item-mobile">Monitoramento de regularidade
                             fiscal</li>
-                        <li>Atualização estatutário conforme os
+                        <li class="item-mobile">Atualização estatutário conforme os
                             requisitos para celebração de
                             parcerias exigidos pela Lei
                             13.019/2014</li>
-                            <li>Construções financiada / moradia/
+                            <li class="item-mobile">Construções financiada / moradia/
                                 habitação</li>
+                        </div>
                     </ul>
                     <!-- <button class="btn btn--block card__btn">Button</button> -->
                 </div>
@@ -441,46 +518,57 @@
                 <div class="infoRow">
                     <img src="./assets/dist/media/images/solucao.jpg">
                     <ul class="card__text backCard">
-                        <h2 class="card_title">Soluções para organizações da sociedade civil</h2>
-
-                        <li >Regularização para promoção ao
+                        
+                        <h2 class="card__title title-servico">Soluções para organizações da sociedade civil</h2>
+                        <div class="servico-container">
+                            <div class="border"></div>
+                            <div>
+                        <li class="li-left" >Regularização para promoção ao
                             recebimento de valores das Leis de
                             incentivos</li>
-                            <li >Desenvolvimento de Plano de
+                            <li class="li-left" >Desenvolvimento de Plano de
                             Trabalho, execução e prestação de
                             contas de projetos de Emenda
                             Parlamentar</li>
-                            <li >Monitoramento de Plataforma Mais
+                            <li class="li-left" >Monitoramento de Plataforma Mais
                                 Brasil – SICONV</li>
-                                <li >Consultoria na elaboração de
+                                <li  class="li-left">Consultoria na elaboração de
                                     projeto para participar de editais
                                     privados e governamental</li>
-                                    <li >Certificações e cadastros (Cebas,
+                            </div>
+                            <div class="border"></div>
+                            <div>
+                                    <li class="li-right">Certificações e cadastros (Cebas,
                                         Cneas, cadastros em conselhos etc)
                                         </li>
-                                        <li >Monitoramento de regularidade
+                                        <li class="li-right">Monitoramento de regularidade
                                             fiscal</li>
-                                        <li >Atualização estatutário conforme os
+                                        <li class="li-right">Atualização estatutário conforme os
                                             requisitos para celebração de
                                             parcerias exigidos pela Lei
                                             13.019/2014</li>
-                                            <li >Construções financiada / moradia/
-                                                habitação</li>
+                                            <li class="li-right" >Construções financiada / moradia/
+                                                habitação</li></div>
+                                            </div>
                     </ul>
                 </div>
             </li>
             <li>
                 <div class="infoRow">
                     <ul class="card__text backCard">
-                        <h2 class="card_title">Gestão e Consultorias</h2>
-                        <li >Gestão de financiamento e empréstimos públicos</li>
-                                <li >Gerenciamento Eletrônico de Documentos (GED)</li>
-                                <li >Consulta patrimonial</li>
-                                    <li >Gerenciamento de mão de obra especializada, técnica e profissional</li>
-                                        <li >Consultoria de implantação e otimização de ponto de comércio
+                        <h2 class="card__title">Gestão e Consultorias</h2>
+                        <div class="servico-container">
+                            <div class="border"></div>
+                            <div>
+                        <li class="li-left" >Gestão de financiamento e empréstimos públicos</li>
+                                <li class="li-left" >Gerenciamento Eletrônico de Documentos (GED)</li>
+                                <li class="li-left">Consulta patrimonial</li>
+                                    <li class="li-left">Gerenciamento de mão de obra especializada, técnica e profissional</li>
+                                        <li class="li-left">Consultoria de implantação e otimização de ponto de comércio
                                             </li>
-                                            <li >Preparação de documentos</li>
-                                            <li >Despacho</li>
+                                            <li class="li-left">Preparação de documentos</li>
+                                            <li class="li-left">Despacho</li>
+                                            </div>
                     </ul>
                     <img src="./assets/src/media/images/insurance.jpg">
                 </div>
@@ -489,27 +577,36 @@
                 <div class="infoRow">
                     <img src="./assets/src/media/images/people.jpg">
                     <ul class="card__text backCard">
-                        <h2 class="card_title">Recursos Humanos</h2>
-
-                        <li >Análise e descrição de cargos</li>
-                        <li >Pesquisa de clima organizacional</li>
-                        <li >Recrutamento e seleção</li>
+                        <h2 class="card__title">Recursos Humanos</h2>
+                        <div class="servico-container">
+                            <div class="border"></div>
+                            <div>
+                        <li class="li-left">Análise e descrição de cargos</li>
+                        <li class="li-left">Pesquisa de clima organizacional</li>
+                        <li class="li-left">Recrutamento e seleção</li>
+                        </div>
                     </ul>
                 </div>
             </li>
             <li>
                 <div class="infoRow">
                     <ul class="card__text backCard">
-                        <h2 class="card_title">Planejamento Estratégico</h2>
-                        <li>Plano de negócio</li>
-                                                                                <li>Modelo de negócio</li>
-                                                                                <li>Consulta mercadológica/pesquisa de mercado</li>
-                                                                                <li >Plano de gerenciamento de tempo</li>
-                                                                                <li >Formação de preços</li>
-                                                                                <li >Estudo de viabilidade técnica e jurídica</li>
-                                                                                <li >Estudo de viabilidade econômica e financeira</li>
-                                                                                <li>Estudo de viabilidade sociambiental</li>
-                                                                                <li>Avaliação do ponto comercial</li>
+                        <h2 class="card__title">Planejamento Estratégico</h2>
+                        <div class="servico-container">
+                            <div class="border"></div>
+                            <div>
+                        <li class="li-left">Plano de negócio</li>
+                                                                                <li class="li-left">Modelo de negócio</li>
+                                                                                <li class="li-left">Consulta mercadológica/pesquisa de mercado</li>
+                                                                                <li class="li-left">Plano de gerenciamento de tempo</li>
+                                                                                <li class="li-left">Formação de preços</li>
+                            </div>
+                            <div class="border"></div>
+                            <div>
+                                                                                <li class="li-right">Estudo de viabilidade técnica e jurídica</li>
+                                                                                <li class="li-right">Estudo de viabilidade econômica e financeira</li>
+                                                                                <li class="li-right">Estudo de viabilidade sociambiental</li>
+                                                                                <li class="li-right">Avaliação do ponto comercial</li></div></div>
                     </ul>
                     <img src="./assets/src/media/images/empresa2.jpg">
                 </div>
