@@ -35,7 +35,15 @@ img {
 }
 .cards__item {
     display: flex;
-    padding: 1rem
+    padding: 1rem;
+    min-width: 414px;
+    max-width: 414px;
+}
+@media screen and (max-width: 320px) {
+    .cards__item {
+        min-width: 320px;
+        max-width: 414px;
+    }
 }
 @media (min-width: 40rem) {
     .cards__item {
