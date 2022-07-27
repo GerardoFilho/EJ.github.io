@@ -22,13 +22,15 @@ p.text-parceiro{
     font-family: OpenSans
 }
 .parceiro-01-background {
-    background-image: url(../../media/images/gigaBackground.png);
+    background: rgba(0,0,0,0.5) url(../../media/images/gigaBackground.png);
+    background-blend-mode: darken;
 }
 .parceiro-02-background {
     background-color: #287ba7;
 }
 .parceiro-03-background {
-    background-image: url(../../media/images/ferreiraBground.png);
+    background: rgba(0,0,0,0.5) url(../../media/images/ferreiraBground.png);
+    background-blend-mode: darken;
 }
 .container-text{
     width: 39%;
