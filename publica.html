@@ -36,29 +36,31 @@
 </head>
 
 <style>
-    .mobileOnly{
+    .mobileOnly {
         display: none;
     }
-    .desktopOnly{
+
+    .desktopOnly {
         display: block;
     }
+
     h1 {
         text-align: center;
         font-size: -webkit-xxx-large;
     }
-    
+
     .text-link {
         text-decoration: none;
         color: #9b9c9f;
         font-weight: 900;
     }
-    
+
     .text-link:hover {
         text-decoration: underline;
     }
-    
+
     .presentation-content {
-        background: rgba(0,0,0,0.7) url(assets/dist/media/images/business.jpg) fixed;
+        background: rgba(0, 0, 0, 0.7) url(assets/dist/media/images/business.jpg) fixed;
         background-size: cover;
         background-blend-mode: darken;
         /* color: #021016; */
@@ -66,46 +68,46 @@
         height: 300px;
         /* padding: 170px 125px; */
     }
-    
+
     .presentation div.texto>strong {
         font-size: 4.3em;
     }
-    
+
     .presentation div.texto>p {
         font-size: 1.7em;
     }
-    
+
     .services-content {
         color: #637381;
     }
-    
+
     .services-content h3 {
         color: #021016;
     }
-    
+
     .service-title {
         text-align: center;
         font-size: 2.1em;
         font-family: sans-serif;
         color: white;
-        background-color:gray;
+        background-color: gray;
         margin-top: 0;
         margin-bottom: 0;
         padding: 25px;
     }
-    
+
     .card-info {
         background-color: #021016b0;
         padding: 15px;
     }
-    
+
     .card-info-top {
         margin-top: 0;
         margin-bottom: 0;
         height: 20px;
         background: white;
     }
-    
+
     .card-info-bottom {
         background-image: url("assets/dist/media/images/Mulher.png");
         background-position: right;
@@ -117,7 +119,7 @@
         margin-bottom: 2%;
         margin-top: 2%;
     }
-    
+
     .card-content {
         font-size: 22px;
         font-family: 'Montserrat';
@@ -125,18 +127,19 @@
         font-weight: 300;
         text-transform: none;
     }
-    
+
     .card__image--river {
         background: url(assets/dist/media/images/engineer-drawing.jpg);
     }
-    
+
     .card__image--record {
         background: url(assets/dist/media/images/contract.jpg);
     }
-    
+
     .card__image--fence {
         background: url(assets/dist/media/images/construction.jpg);
     }
+
     .infoRow {
         display: flex;
         gap: 20px;
@@ -147,33 +150,39 @@
         font-family: 'Montserrat';
         font-weight: 300;
     }
-    .infoRow img{
+
+    .infoRow img {
         border-radius: 30px;
         width: 40%;
         max-height: 341px;
         margin-top: 20px;
         margin-bottom: 20px;
-       
+
     }
+
     li {
         list-style: none;
-        
+
     }
-    .servico-container{
+
+    .servico-container {
         display: flex;
         line-height: 20px;
     }
-    .title-servico{
+
+    .title-servico {
         margin-bottom: 10px;
-        
+
     }
+
     .li-left {
         text-align: left;
         width: 90%;
         margin-left: 20px;
         margin-right: 100px;
-        
+
     }
+
     .li-left:hover {
         font-weight: 700;
         cursor: context-menu;
@@ -183,100 +192,131 @@
         text-align: left;
         width: 100%;
         margin-left: 20px;
-        
-        
+
+
     }
+
     .li-right:hover {
         font-weight: 700;
         cursor: context-menu;
     }
-    .border{
+
+    .border {
         border-left: 2px solid #e7164f;
-       
+
     }
-    .card__title{
+
+    .card__title {
         font-size: 1.7em;
         margin-bottom: 30px;
     }
 
-    
+
     @media (max-width: 895px) {
-        .mobileOnly{
+        .mobileOnly {
             display: block;
         }
-        .desktopOnly{
+
+        .desktopOnly {
             display: none;
         }
-        .border{
-       
-       margin-left: -15px;
-       
-   }
-   .item-mobile{
-       margin-left: 20px;
-   }
-   .card__title{
-    margin-bottom: 5px;
-   }
+
+        .border {
+
+            margin-left: -15px;
+
+        }
+
+        .item-mobile {
+            margin-left: 20px;
+        }
+
+        .card__title {
+            margin-bottom: 5px;
+        }
     }
+
     @media (max-width: 768px) {
         .about-content {
             max-width: 100%;
             zoom: 95%;
         }
+
         .about-container {
             background: none;
         }
+
         .presentation div.texto>strong {
             font-size: 2em;
         }
+
         .presentation div.texto>p {
             font-size: 1em;
         }
+
+        .service-title {
+            font-size: 24px;
+        }
+
         #services {
             padding-left: 0;
             padding-right: 0;
         }
+
         #sustentabilidade-imagem {
             display: none;
         }
+
         .services-container img {
             border-radius: 0;
         }
+
         .card__title {
             font-size: 1.2em;
             margin-bottom: 5px;
-            
-            
+
+
         }
-        
+
         .card__text {
             font-size: 1em;
-            
+
         }
-        .card-content{
+
+        .card-content {
             max-width: 400px;
             margin-right: 81px;
         }
+
         .card-info-bottom {
             background-size: contain;
         }
-        .card-content{
+
+        .card-content {
             font-size: 20px;
         }
-        .border{
-       
-       margin-left: -20px;
-       
-   }
-   .item-mobile{
-       margin-left: 20px;
-   }
-     
+
+        .border {
+
+            margin-left: -20px;
+
+        }
+
+        .item-mobile {
+            margin-left: 20px;
+        }
+
     }
 </style>
 
 <body>
+
+    <!-- Start Whatsapp Button-->
+    <a class="whatsapp" href="https://web.whatsapp.com/send?phone=5588996710713" target="_blank">
+        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+
+    </a>
+    <!-- End Whatsapp Button-->
 
     <div id='logo' class="logo-content">
         <a href="./index.html">
@@ -316,12 +356,6 @@
     </div>
 </nav>
 
-    <!-- Start Whatsapp Button-->
-    <a class="whatsapp" href="https://web.whatsapp.com/send?phone=5588996710713" target="_blank">
-        <i class="fa fa-whatsapp" aria-hidden="true"></i>
-
-    </a>
-    <!-- End Whatsapp Button-->
 
 
     <section id="presentation" class="presentation">
@@ -332,7 +366,8 @@
 
                 <div class="texto">
                     <strong>Suporte a Gestão <span>Pública</span></strong>
-                    <p> Diante das dificuldades e desafios exsurgidos das diversas esferas governamentais, somos o parceiro ideal de avanço estrutural, econômico e social.</p>
+                    <p> Diante das dificuldades e desafios exsurgidos das diversas esferas governamentais, somos o
+                        parceiro ideal de avanço estrutural, econômico e social.</p>
                     <!-- <a href="#services" class="btn-primary">Nossos Serviços</a> -->
                 </div>
 
@@ -341,41 +376,44 @@
         </div>
 
     </section>
-    <h2 class="service-title">RESULTADOS DAS INTERMEDIAÇÕES</h2>
+    <h2 class="service-title">RESULTADOS DAS INTERMEDIAÇÕES FINANCEIRAS</h2>
     <br />
-    <div class="slider">
-        <div class="slides">
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
-            <input type="radio" name="radio-btn" id="radio4">
+    <div class="bg">
 
-            <div class="slide first">
-                <img src="assets/dist/media/images/business.jpg">
-            </div>
-            <div class="slide">
-                <img src="assets/dist/media/images/building.jpg">
-            </div>
-            <div class="slide">
-                <img src="assets/dist/media/images/corporate.jpg">
-            </div>
-            <div class="slide">
-                <img src="assets/dist/media/images/construction.jpg">
-            </div>
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
 
-            <div class="navigation-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
-                <div class="auto-btn4"></div>
-            </div>
+                <div class="slide first">
+                    <img src="assets/dist/media/images/2019.png">
+                </div>
+                <div class="slide">
+                    <img src="assets/dist/media/images/2020.png">
+                </div>
+                <div class="slide">
+                    <img src="assets/dist/media/images/2021.png">
+                </div>
+                <div class="slide">
+                    <img src="assets/dist/media/images/contratual.png">
+                </div>
 
-        </div>
-        <div class="manual-navigation">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
-            <label for="radio4" class="manual-btn"></label>
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+
+            </div>
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
         </div>
     </div>
     <br />
@@ -393,17 +431,22 @@
                             <div>
                                 <li class="li-left">Captação de recursos a fundos perdidos</li>
                                 <li class="li-left">Auditoria em convênios vigentes e futuros</li>
-                                <li class="li-left">Habilitação dos convênios que apresentarem inconformidades e restrições</li>
+                                <li class="li-left">Habilitação dos convênios que apresentarem inconformidades e
+                                    restrições</li>
                                 <li class="li-left">Desenvolvimento de ações de ressarcimento das obras paralisadas</li>
                                 <li class="li-left">Alimentação de sistemas de governo (SINCOV, SIMEC e SISMOB)</li>
-                                <li class="li-left">Agilidade de repasse financeiro das obras que estão em andamento</li>
+                                <li class="li-left">Agilidade de repasse financeiro das obras que estão em andamento
+                                </li>
                             </div>
                             <div class="border"></div>
                             <div>
-                                <li class="li-right">Acompanhamento técnico-jurídico das obras contratadas e/ou convênios assinados </li>
-                                <li class="li-right">Comunicação direta com entes públicos da esfera municipal, estadual e federal</li>
+                                <li class="li-right">Acompanhamento técnico-jurídico das obras contratadas e/ou
+                                    convênios assinados </li>
+                                <li class="li-right">Comunicação direta com entes públicos da esfera municipal, estadual
+                                    e federal</li>
                                 <li class="li-right">Suporte de serviços com despacho diretamente em Brasília</li>
-                                <li class="li-right">Redução de custos com tributos (taxas, impostos, alvarás, licenças)</li>
+                                <li class="li-right">Redução de custos com tributos (taxas, impostos, alvarás, licenças)
+                                </li>
                                 <li class="li-right">Intermediação financeira de contratos públicos</li>
                             </div>
                         </div>
@@ -417,23 +460,25 @@
                         <div class="servico-container">
                             <div class="border"></div>
                             <div>
-                                <li class="li-left">Acesso a todas as licitações do mercado (convites, tomadas de preços, concorrências e pregões)</li>
+                                <li class="li-left">Acesso a todas as licitações do mercado (convites, tomadas de
+                                    preços, concorrências e pregões)</li>
                                 <li class="li-left">Retirada a análise minuciosa das condições do edital</li>
                                 <li class="li-left">Pesquisa acerca da situação financeira do órgão licitante</li>
-                            <li class="li-left">Atualização da documentação pertinente</li>
-                            <li class="li-left">Cadastro das empresas (CRC, SICAF e Outros)</li>
-                            <li class="li-left">Acompanhamento para o licitante nos procedimentos instaurados</li>
-                            <li class="li-right">Relatórios das fases ínsitas a prestação do serviço desempenhado</li>
-                            <li class="li-right">Solução de eventuais dúvidas sobre a licitação</li>
-                            <li class="li-right">Elaboração dos envelopes da habilitação e propostas</li>
-                            <li class="li-right">Apresentação de impugnações e contrarrazões ao edital</li>
-                            <li class="li-right">Manuseio dos recursos administrativos cabíveis</li>
-                            <li class="li-right">Utilização das ferramentas judiciais disponíveis</li>
+                                <li class="li-left">Atualização da documentação pertinente</li>
+                                <li class="li-left">Cadastro das empresas (CRC, SICAF e Outros)</li>
+                                <li class="li-left">Acompanhamento para o licitante nos procedimentos instaurados</li>
+                                <li class="li-right">Relatórios das fases ínsitas a prestação do serviço desempenhado
+                                </li>
+                                <li class="li-right">Solução de eventuais dúvidas sobre a licitação</li>
+                                <li class="li-right">Elaboração dos envelopes da habilitação e propostas</li>
+                                <li class="li-right">Apresentação de impugnações e contrarrazões ao edital</li>
+                                <li class="li-right">Manuseio dos recursos administrativos cabíveis</li>
+                                <li class="li-right">Utilização das ferramentas judiciais disponíveis</li>
+                            </div>
+
                         </div>
-                       
-                    </div>
-                </ul>
-                <img src="assets/dist/media/images/contract.jpg">
+                    </ul>
+                    <img src="assets/dist/media/images/contract.jpg">
                 </div>
             </li>
         </ul>
@@ -450,16 +495,22 @@
                         <!-- <p class="card__text"> -->
                         <ul class="card__text">
                             <div class="border">
-                            <li class="item-mobile">Captação de recursos a fundos perdidos</li>
-                            <li class="item-mobile">Auditoria em convênios vigentes e futuros</li>
-                            <li class="item-mobile">Habilitação dos convênios que apresentarem inconformidades e restrições</li>
-                            <li class="item-mobile">Desenvolvimento de ações de ressarcimento das obras paralisadas</li>
-                            <li class="item-mobile">Alimentação de sistemas de governo (SINCOV, SIMEC e SISMOB)</li>
-                            <li class="item-mobile">Agilidade de repasse financeiro das obras que estão em andamento</li>
-                            <li class="item-mobile">Acompanhamento técnico-jurídico das obras contratadas e/ou convênios assinados </li>
-                            <li class="item-mobile">Comunicação direta com entes públicos da esfera municipal, estadual e federal</li>
-                            <li class="item-mobile">Suporte de serviços com despacho diretamente em Brasília</li>
-                       </div> </ul>
+                                <li class="item-mobile">Captação de recursos a fundos perdidos</li>
+                                <li class="item-mobile">Auditoria em convênios vigentes e futuros</li>
+                                <li class="item-mobile">Habilitação dos convênios que apresentarem inconformidades e
+                                    restrições</li>
+                                <li class="item-mobile">Desenvolvimento de ações de ressarcimento das obras paralisadas
+                                </li>
+                                <li class="item-mobile">Alimentação de sistemas de governo (SINCOV, SIMEC e SISMOB)</li>
+                                <li class="item-mobile">Agilidade de repasse financeiro das obras que estão em andamento
+                                </li>
+                                <li class="item-mobile">Acompanhamento técnico-jurídico das obras contratadas e/ou
+                                    convênios assinados </li>
+                                <li class="item-mobile">Comunicação direta com entes públicos da esfera municipal,
+                                    estadual e federal</li>
+                                <li class="item-mobile">Suporte de serviços com despacho diretamente em Brasília</li>
+                            </div>
+                        </ul>
                         <!-- </p> -->
                         <!-- <button class="btn btn--block card__btn">Button</button> -->
                     </div>
@@ -489,19 +540,23 @@
                         <div class="card__title">Consultoria e Assessoria Jurídica</div>
                         <ul class="card__text">
                             <div class="border">
-                            <li class="item-mobile">Acesso a todas as licitações do mercado (convites, tomadas de preços, concorrências e pregões)</li>
-                            <li class="item-mobile">Retirada a análise minuciosa das condições do edital</li>
-                            <li class="item-mobile">Pesquisa acerca da situação financeira do órgão licitante</li>
-                            <li class="item-mobile">Atualização da documentação pertinente</li>
-                            <li class="item-mobile">Cadastro das empresas (CRC, SICAF e Outros)</li>
-                            <li class="item-mobile">Acompanhamento para o licitante nos procedimentos instaurados</li>
-                            <li class="item-mobile">Relatórios das fases ínsitas a prestação do serviço desempenhado</li>
-                            <li class="item-mobile">Solução de eventuais dúvidas sobre a licitação</li>
-                            <li class="item-mobile">Elaboração dos envelopes da habilitação e propostas</li>
-                            <li class="item-mobile">Apresentação de impugnações e contrarrazões ao edital</li>
-                            <li class="item-mobile">Manuseio dos recursos administrativos cabíveis</li>
-                            <li class="item-mobile">Utilização das ferramentas judiciais disponíveis</li>
-                        </div></ul>
+                                <li class="item-mobile">Acesso a todas as licitações do mercado (convites, tomadas de
+                                    preços, concorrências e pregões)</li>
+                                <li class="item-mobile">Retirada a análise minuciosa das condições do edital</li>
+                                <li class="item-mobile">Pesquisa acerca da situação financeira do órgão licitante</li>
+                                <li class="item-mobile">Atualização da documentação pertinente</li>
+                                <li class="item-mobile">Cadastro das empresas (CRC, SICAF e Outros)</li>
+                                <li class="item-mobile">Acompanhamento para o licitante nos procedimentos instaurados
+                                </li>
+                                <li class="item-mobile">Relatórios das fases ínsitas a prestação do serviço desempenhado
+                                </li>
+                                <li class="item-mobile">Solução de eventuais dúvidas sobre a licitação</li>
+                                <li class="item-mobile">Elaboração dos envelopes da habilitação e propostas</li>
+                                <li class="item-mobile">Apresentação de impugnações e contrarrazões ao edital</li>
+                                <li class="item-mobile">Manuseio dos recursos administrativos cabíveis</li>
+                                <li class="item-mobile">Utilização das ferramentas judiciais disponíveis</li>
+                            </div>
+                        </ul>
                         <!-- <button class="btn btn--block card__btn">Button</button> -->
                     </div>
                 </div>
@@ -523,7 +578,8 @@
     <div class="card-info card-info-bottom">
         <div class="card-container">
             <div class="card-content">
-                <p>A EJ Engenharia Jurídica oferece acompanhamento, serviços de apoio e assessoria especializada, voltada à realidade de cada munícipio.</p>
+                <p>A EJ Engenharia Jurídica oferece acompanhamento, serviços de apoio e assessoria especializada,
+                    voltada à realidade de cada munícipio.</p>
             </div>
         </div>
     </div>
@@ -536,10 +592,12 @@
                 <h5>"O que parece uma simples consulta, o tornará mais competitivo."</h5>
 
                 <input class="input" type="text" name="nome" id="nome" placeholder="Nome completo">
-                <input class="input" type="text" name="nome_empresa" id="nome_empresa" placeholder="Nome de sua empresa">
+                <input class="input" type="text" name="nome_empresa" id="nome_empresa"
+                    placeholder="Nome de sua empresa">
                 <input class="input" type="email" name="email" id="email" placeholder="Seu email">
                 <input class="input" type="text" name="subject" id="subject" placeholder="Assunto da mensagem">
-                <textarea class="input" name="message" id="message" cols="30" rows="10" placeholder="Digite aqui sua mensagem..."></textarea>
+                <textarea class="input" name="message" id="message" cols="30" rows="10"
+                    placeholder="Digite aqui sua mensagem..."></textarea>
                 <button class="btn-secondary left larg" type="submit">Enviar</button>
             </form>
         </div>
@@ -555,17 +613,18 @@
         <div class="footer-content">
 
             <div class="address">
-                
-                    <a href="tel:88996710713">
-                        <i class="fa fa-whatsapp" aria-hidden="true"></i> (88) 9 96710713
-                        <br>
-                        <a href="tel:88999004005"> <i class="fa fa-fax"> &nbsp;</i>Fone/Fax: (88) 9 99004005</a>
-                        <br />
-                        <a href="https://www.instagram.com/ejconsultoriaoficial/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i> ejconsultoriaoficial </a>
-                        <br>
-                        <a href="mailto:comercial@ejengenharia.com.br">
-                            <i class="fa fa-envelope-o" aria-hidden="true"></i> comercial@ejengenharia.com.br</a>
-                </p>
+
+                <a href="tel:88996710713">
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i> (88) 9 96710713
+                    <br>
+                    <a href="tel:88999004005"> <i class="fa fa-fax"> &nbsp;</i>Fone/Fax: (88) 9 99004005</a>
+                    <br />
+                    <a href="https://www.instagram.com/ejconsultoriaoficial/" target="_blank"><i class="fa fa-instagram"
+                            aria-hidden="true"></i> ejconsultoriaoficial </a>
+                    <br>
+                    <a href="mailto:comercial@ejengenharia.com.br">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i> comercial@ejengenharia.com.br</a>
+                    </p>
             </div>
 
             <!-- <span class="pipe">|</span>
@@ -591,7 +650,6 @@
     </footer>
     <script src="assets/dist/js/jquery/jquery-3.2.1.min.js"></script>
     <script src="assets/dist/js/smooth-row.js"></script>
-    <script src="assets/dist/js/navbar.js"></script>
     <script src="assets/dist/js/navbar.js"></script>
     <script src="assets/dist/js/ScrollKeys.js"></script>
     <script src="assets/dist/js/slider.js"></script>
