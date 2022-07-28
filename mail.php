@@ -72,7 +72,7 @@
                 <a href="#top" class="hvr-bounce-to-top">Início</a>
             </li>
             <li>
-                <a href="#about" class="hvr-bounce-to-top">Quem somos</a>
+                <a href="#about" class="hvr-bounce-to-top">Quem Somos</a>
             </li>
             <li>
                 <a href="#service-box" class="hvr-bounce-to-top">Nossos Serviços</a>

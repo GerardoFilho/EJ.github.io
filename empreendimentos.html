@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="assets/dist/css/sections/presentation.css">
     <link rel="stylesheet" href="assets/dist/css/sections/contact.css">
     <link rel="stylesheet" href="assets/dist/css/sections/float-whatsapp.css">
+    <link rel="stylesheet" href="assets/dist/css/sections/slider.css">
 
 
     <link rel="stylesheet" href="assets/dist/media/icons/css/font-awesome.min.css">
@@ -338,10 +339,13 @@
                     <a href="./index.html" class="hvr-bounce-to-top">Início</a>
                 </li>
                 <li>
-                    <a href="./about.html" class="hvr-bounce-to-top">Quem somos</a>
+                    <a href="./about.html" class="hvr-bounce-to-top">Quem Somos</a>
                 </li>
                 <li>
                     <a href="index.html#service-box" class="hvr-bounce-to-top">Nossos Serviços</a>
+                </li>
+                <li>
+                    <a href="index.html#clientes" class="hvr-bounce-to-top">Nossos Clientes</a>
                 </li>
                 <li>
                     <a href="#contact" class="hvr-bounce-to-top">Contato</a>
@@ -358,8 +362,10 @@
             <div id="sustentabilidade-presentation" class="presentation-content">
 
                 <div class="texto">
-                    <strong>Serviços de Gestão de <span>Empreendimentos</span></strong>
-                    <p> <strong>Para apoiar e tornar seu negócio mais competitivo.</strong></p>
+                    <strong>Suporte a Organizações da Sociedade Civil (OSCs)</strong>
+                    <p> <strong>Pesquisa inédita do Ipea realizada em 2019, mostrou que das mais de 820 mil organizações da
+                        sociedade civil (OSCs) em atividade no Brasil, somente (2,7%) receberam recursos federal entre
+                        2010 e 2018. O que equivale a R$ 118,5 bilhões de reais.</strong></p>
                     <!-- <a href="#services" class="btn-primary">Nossos Serviços</a> -->
                 </div>
 
@@ -376,33 +382,47 @@
             </div>
         </div>
     </div>
-    <section>
-        <div class="container-ideia">
-            <div class="texto-ideia">
-                <div class="container-img-mobile">
-                    <p class="title-ideia">Nossa ideia</p>
-                    <img class="img-mobile" src="./assets/dist/media/images/lampada.png">
-                </div>
-                <p class="description-ideia">Pesquisa inédita do Ipea realizada em
-                    2019, mostrou que das mais de 820 mil
-                    organizações da sociedade civil (OSCs)
-                    em atividade no Brasil, somente (2,7%)
-                    receberam recursos federais entre 2010
-                    e 2018. o que equivale a R$ 118,5
-                    bilhões de reais.
-                </p>
-                <p class="description-ideia">Com a informação do Ipea, decidimos
-                    montar um “time” que fosse capaz de
-                    mobilizar recursos para organizações
-                    sem fins lucrativo em apoio à sua
-                    finalidade principal.</p>
-            </div>
-            <div>
-                <img class="img-ideia" src="./assets/dist/media/images/lampada.png">
-            </div>
+    
+    <h2 class="service-title">DEPOIMENTO DE NOSSOS CLIENTES</h2>
+    
+    <div class="bg">
 
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+
+                <div class="slide first">
+                    <img src="assets/dist/media/images/2019.png">
+                </div>
+                <div class="slide">
+                    <img src="assets/dist/media/images/2020.png">
+                </div>
+                <div class="slide">
+                    <img src="assets/dist/media/images/2021.png">
+                </div>
+                <div class="slide">
+                    <img src="assets/dist/media/images/contratual.png">
+                </div>
+
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+
+            </div>
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
         </div>
-    </section>
+    </div>
 
     <section class="mobileOnly">
         <h2 class="service-title">SERVIÇOS</h2>
@@ -473,7 +493,7 @@
                 <div class="card">
                     <img src="./assets/dist/media/images/solucao.jpg">
                     <div class="card__content">
-                        <div class="card__title">Soluções para organizações da sociedade civil</div>
+                        <div class="card__title">Serviços Especializados</div>
                         <ul class="card__text">
                             <div class="border">
                                 <li class="item-mobile">Regularização para promoção ao
@@ -496,8 +516,6 @@
                                     requisitos para celebração de
                                     parcerias exigidos pela Lei
                                     13.019/2014</li>
-                                <li class="item-mobile">Construções financiada / moradia/
-                                    habitação</li>
                             </div>
                         </ul>
                         <!-- <button class="btn btn--block card__btn">Button</button> -->
@@ -514,7 +532,7 @@
                     <img src="./assets/dist/media/images/solucao.jpg">
                     <ul class="card__text backCard">
 
-                        <h2 class="card__title title-servico">Soluções para organizações da sociedade civil</h2>
+                        <h2 class="card__title title-servico" style="text-align: center;">Serviços Especializados</h2>
                         <div class="servico-container">
                             <div class="border"></div>
                             <div>
@@ -542,14 +560,12 @@
                                     requisitos para celebração de
                                     parcerias exigidos pela Lei
                                     13.019/2014</li>
-                                <li class="li-right">Construções financiada / moradia/
-                                    habitação</li>
                             </div>
                         </div>
                     </ul>
                 </div>
             </li>
-            <li>
+            <!-- <li>
                 <div class="infoRow">
                     <ul class="card__text backCard">
                         <h2 class="card__title">Gestão e Consultorias</h2>
@@ -609,7 +625,7 @@
                     </ul>
                     <img src="./assets/src/media/images/empresa2.jpg">
                 </div>
-            </li>
+            </li> -->
 
         </ul>
     </section>
@@ -657,8 +673,6 @@
 
                 <a href="tel:88996710713">
                     <i class="fa fa-whatsapp" aria-hidden="true"></i> (88) 9 96710713
-                    <br>
-                    <a href="tel:88999004005"> <i class="fa fa-fax"> &nbsp;</i>Fone/Fax: (88) 9 99004005</a>
                     <br />
                     <a href="https://www.instagram.com/ejconsultoriaoficial/" target="_blank"><i class="fa fa-instagram"
                             aria-hidden="true"></i> ejconsultoriaoficial </a>
@@ -668,17 +682,6 @@
                     </p>
             </div>
 
-            <!-- <span class="pipe">|</span>
-
-            <div class="address">
-                <p>SGAN, nº 220, Módulo C, Bloco B, Asa Norte
-                    <br> Brasília - Distrito Federal, CEP: 70790-123
-                    <br>
-                    <a href="tel:88999004005">Fone/Fax: (88) 9 99004005</a>
-                    <br>
-
-                </p>
-            </div> -->
 
         </div>
 
@@ -693,6 +696,8 @@
     <script src="assets/dist/js/smooth-row.js"></script>
     <script src="assets/dist/js/navbar.js"></script>
     <script src="assets/dist/js/ScrollKeys.js"></script>
+    <script src="assets/dist/js/slider.js"></script>
+
 </body>
 
 </html>

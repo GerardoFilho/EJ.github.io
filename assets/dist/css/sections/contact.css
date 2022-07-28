@@ -37,9 +37,11 @@
     flex-direction: row;
     color: white;
     padding: 50px 120px 50px 120px;
+    font-family: Montserrat;
 
     align-items: center;
     background-color: #021025;
+    border-bottom: 12px solid #e5e5e5;
 }
 .texto-ideia{
     width: 100%;
