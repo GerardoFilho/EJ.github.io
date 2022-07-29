@@ -1,6 +1,11 @@
 .container {
     font-family: OpenSans
 }
+.service-box-content{
+display: flex;
+justify-content: center;
+align-items: center;
+}
 .service-box-content,
 .service-icon {
     width: 100%;

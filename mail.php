@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>EJ Engenharia Juridica</title>
+    <title>EJ Consultoria</title>
     <meta name="author" content="Davi Cedraz">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,7 +37,7 @@
         <div class="header-content header-container">
             <div>
                 <a href="">
-                    <img src="assets/src/media/images/logoColor.png" alt="EJ Engenharia Juridica Logo">
+                    <img src="assets/src/media/images/logoColor.png" alt="EJ Consultoria Logo">
                 </a>
             </div>
 
