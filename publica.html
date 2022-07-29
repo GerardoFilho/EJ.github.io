@@ -133,11 +133,15 @@
     }
 
     .card__image--record {
-        background: url(assets/dist/media/images/contract.jpg);
+        background: url(assets/dist/media/images/growth.png);
+        background-size: cover;
+        background-position-y: center;
     }
 
     .card__image--fence {
-        background: url(assets/dist/media/images/construction.jpg);
+        background: url(assets/dist/media/images/problem.png);
+        background-size: cover;
+        background-position-y: center;
     }
 
     .infoRow {
@@ -312,9 +316,11 @@
 <body>
 
     <!-- Start Whatsapp Button-->
-    <a class="whatsapp" href="https://web.whatsapp.com/send?phone=5588996710713" target="_blank">
+    <a class="whatsapp mobile" href="https://wa.me/5588989898989" target="_blank">
         <i class="fa fa-whatsapp" aria-hidden="true"></i>
-
+    </a>
+    <a class="whatsapp desktop" href="https://web.whatsapp.com/send?phone=5588996710713" target="_blank">
+        <i class="fa fa-whatsapp" aria-hidden="true"></i>
     </a>
     <!-- End Whatsapp Button-->
 
@@ -437,30 +443,19 @@
     </section>
 
     <section class="mobileOnly">
-        <h2 class="service-title">SERVIÇOS</h2>
+        <h2 class="service-title">Soluções para empresas prestadoras de serviços públicos</h2>
         <ul class="cards">
             <li class="cards__item">
                 <div class="card">
                     <div class="card__image card__image--fence"></div>
                     <div class="card__content">
-                        <div class="card__title">Convênios e Obras Públicas</div>
+                        <div class="card__title">Problemas identificados</div>
                         <!-- <p class="card__text"> -->
                         <ul class="card__text">
                             <div class="border">
-                                <li class="item-mobile">Captação de recursos a fundos perdidos</li>
-                                <li class="item-mobile">Auditoria em convênios vigentes e futuros</li>
-                                <li class="item-mobile">Habilitação dos convênios que apresentarem inconformidades e
-                                    restrições</li>
-                                <li class="item-mobile">Desenvolvimento de ações de ressarcimento das obras paralisadas
-                                </li>
-                                <li class="item-mobile">Alimentação de sistemas de governo (SINCOV, SIMEC e SISMOB)</li>
-                                <li class="item-mobile">Agilidade de repasse financeiro das obras que estão em andamento
-                                </li>
-                                <li class="item-mobile">Acompanhamento técnico-jurídico das obras contratadas e/ou
-                                    convênios assinados </li>
-                                <li class="item-mobile">Comunicação direta com entes públicos da esfera municipal,
-                                    estadual e federal</li>
-                                <li class="item-mobile">Suporte de serviços com despacho diretamente em Brasília</li>
+                                <li class="item-mobile">Aceitação de custos; taxas, alvarás, impostos e/ou licenças onerosos.</li>
+                                <li class="item-mobile">Ineficiência de comunicação oficial.</li>
+                                <li class="item-mobile">Descuido ou desconhecimento das Leis, normas e regimento internos que rege a contratação.</li>
                             </div>
                         </ul>
                         <!-- </p> -->
@@ -489,24 +484,13 @@
                 <div class="card">
                     <div class="card__image card__image--record"></div>
                     <div class="card__content">
-                        <div class="card__title">Consultoria e Assessoria Jurídica</div>
+                        <div class="card__title">Soluções</div>
                         <ul class="card__text">
                             <div class="border">
-                                <li class="item-mobile">Acesso a todas as licitações do mercado (convites, tomadas de
-                                    preços, concorrências e pregões)</li>
-                                <li class="item-mobile">Retirada a análise minuciosa das condições do edital</li>
-                                <li class="item-mobile">Pesquisa acerca da situação financeira do órgão licitante</li>
-                                <li class="item-mobile">Atualização da documentação pertinente</li>
-                                <li class="item-mobile">Cadastro das empresas (CRC, SICAF e Outros)</li>
-                                <li class="item-mobile">Acompanhamento para o licitante nos procedimentos instaurados
-                                </li>
-                                <li class="item-mobile">Relatórios das fases ínsitas a prestação do serviço desempenhado
-                                </li>
-                                <li class="item-mobile">Solução de eventuais dúvidas sobre a licitação</li>
-                                <li class="item-mobile">Elaboração dos envelopes da habilitação e propostas</li>
-                                <li class="item-mobile">Apresentação de impugnações e contrarrazões ao edital</li>
-                                <li class="item-mobile">Manuseio dos recursos administrativos cabíveis</li>
-                                <li class="item-mobile">Utilização das ferramentas judiciais disponíveis</li>
+                                <li class="item-mobile">Gerenciamento contratual, inclusive comunicação oficial periódica.</li>
+                                <li class="item-mobile">Redução de custos com tributos (taxas, impostos, alvarás, licenças).</li>
+                                <li class="item-mobile">Intermediação financeira de contratos públicos.</li>
+                                <li class="item-mobile">Desenvolvimento de estudo de impactos decorrente da execução contratual.</li>
                             </div>
                         </ul>
                         <!-- <button class="btn btn--block card__btn">Button</button> -->
@@ -580,7 +564,7 @@
     <section id="contact" class="contact-back">
         <div class="contact-content">
             <form method="POST" action="mail.php">
-                <h1>CONTATO</h1>
+                <h1>Contato</h1>
 
                 <h5>"O que parece uma simples consulta, o tornará mais competitivo."</h5>
 
@@ -589,7 +573,7 @@
                     placeholder="Nome de sua empresa">
                 <input class="input" type="email" name="email" id="email" placeholder="Seu email">
                 <input class="input" type="text" name="subject" id="subject" placeholder="Assunto da mensagem">
-                <textarea class="input" name="message" id="message" cols="30" rows="10"
+                <textarea class="input" name="message" id="message" rows="3"
                     placeholder="Digite aqui sua mensagem..."></textarea>
                 <button class="btn-secondary left larg" type="submit">Enviar</button>
             </form>
@@ -613,14 +597,14 @@
                     <a href="https://www.instagram.com/ejconsultoriaoficial/" target="_blank"><i class="fa fa-instagram"
                             aria-hidden="true"></i> ejconsultoriaoficial </a>
                     <br>
-                    <a href="mailto:comercial@ejengenharia.com.br">
-                        <i class="fa fa-envelope-o" aria-hidden="true"></i> comercial@ejengenharia.com.br</a>
+                    <a href="mailto:comercial@ejconsultoria.com">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i> comercial@ejconsultoria.com</a>
                     </p>
+                    <span id="cnpj">CNPJ: 22.212.407/0001-15</span>
             </div>
 
         </div>
 
-        <span id="cnpj">CNPJ: 22.212.407/0001-15</span>
 
         <!-- <a id="123" target="_blank" href="http://www.davicedraz.com" style="float: right; color: white; text-decoration: none">
             <p> <span class="title"><</span><span class="title"> / </span><span class="title">></span> </p>

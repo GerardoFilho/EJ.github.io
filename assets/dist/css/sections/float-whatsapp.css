@@ -1,3 +1,9 @@
+.desktop {
+    display: inherit;
+}
+.mobile {
+    display: none;
+}
 .whatsapp {
     position: fixed;
     width: 60px;
@@ -23,6 +29,14 @@
     margin-top: 16px;
 }
 
+@media screen and (max-width: 1024px) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: inherit;
+    }
+}
 @media screen and (max-width: 768px) {
     .whatsapp {
         bottom: 20px;

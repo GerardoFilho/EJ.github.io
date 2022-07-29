@@ -1,4 +1,19 @@
 
+.parceiro {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.parceiro strong {
+    font-size: 12px;
+}
+.parceiro p{
+    width: 70%;
+    font-size: 14px;
+    text-align: center;
+}
 .parceiros {
     display: flex;
     justify-content: space-around;
@@ -12,9 +27,7 @@
 .parceiros img {
     max-width: 184px;
     max-height: 100px;
-    background-color: rgb(0, 0, 0);
     border-radius: 20px;
-    border: 2px solid white;
 }
 p.text-parceiro{
     color: #fff;
@@ -93,13 +106,29 @@ p.text-parceiro{
     .parceiros {
         display: flex;
         justify-content: space-around;
-
+        padding: 15px;
         flex-wrap: wrap;
     
     }
+    .parceiro {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-basis: content;
+    }
+    .parceiro strong {
+        font-size: 14px;
+    }
+    .parceiro p{
+        width: 65%;
+        font-size: 16px;
+        text-align: center;
+    }
     .parceiros img {
-        max-width: 184px;
-        max-height: 100px;
+        max-width: 112px;
+        max-height: 66px;
     }
     p.text-parceiro{
         color: #fff;

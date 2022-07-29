@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="assets/dist/css/sections/about.css">
     <link rel="stylesheet" href="assets/dist/css/sections/contact.css">
     <link rel="stylesheet" href="assets/dist/css/sections/float-whatsapp.css">
+    <link rel="stylesheet" href="assets/dist/css/sections/parceiros.css">
+    <link rel="stylesheet" href="assets/dist/css/sections/services-box.css">
 
     <link rel="stylesheet" href="assets/dist/media/icons/css/font-awesome.min.css">
 
@@ -36,7 +38,9 @@
     .text-link:hover {
         text-decoration: underline;
     }
-
+    .about-box {
+        margin: 140px 0;
+    }
     .about-content {
         max-width: 65%;
         padding-left: 5%;
@@ -60,6 +64,10 @@
     }
 
     @media (max-width: 768px) {
+        .about-box {
+        margin-top: 40px;
+        margin-bottom: 140px;
+    }
         .about-content {
             max-width: 100%;
             zoom: 95%;
@@ -71,9 +79,11 @@
 <body>
 
     <!-- Start Whatsapp Button-->
-    <a class="whatsapp" href="https://wa.me/5588996710713" target="_blank">
+    <a class="whatsapp mobile" href="https://wa.me/5588989898989" target="_blank">
         <i class="fa fa-whatsapp" aria-hidden="true"></i>
-
+    </a>
+    <a class="whatsapp desktop" href="https://web.whatsapp.com/send?phone=5588996710713" target="_blank">
+        <i class="fa fa-whatsapp" aria-hidden="true"></i>
     </a>
     <!-- End Whatsapp Button-->
 
@@ -120,48 +130,72 @@
 
 
     <section id="about" class="about about-container">
-        <div class="about-content">
-            <br />
-            <br />
-            <br />
-            <br />
-            <h3>EJ Engenharia Jurídica</h3>
-            <div class="paragrafo">
-                <span>
-                    Com inutito de apoiar, bem como tornar os empreendedores mais competitivos. A EJ-Engenharia
-                    Jurídica, Apresenta os serviços de
-                    <strong><a class="text-link" href="empreendimentos.html">Gestão de Empreedimentos</a></strong>
-                    destinados ao fortalecimento empresarial, adminsitrativo e operacional.
-                </span>
+        <div class="about-box">
+            <div class="about-content">
+                <h3 style="color: #e7164f;">Nossa Equipe</h3>
+                <div class="paragrafo">
+                    <span>
+                        Somos um time composto por profissionais das áreas de engenharia, (civil, mecânica, ambiental,
+                        elétrica), arquitetura, topografia, assistentes sociais, contadores, além de juristas e
+                        advogados especializados nos ramos do direito tributário e administrativo.
+                    </span>
 
-                <span>
-                    Diante das dificuldades e desafios das imposições fiscalizatórias, tecnlógicas e financeiras das
-                    difersas esferas governamentais, oferecemos também consultoria e acessoria em apoio a
-                    <strong> <a class="text-link" href="publica.html">Gestão Pública</a> </strong>.
-                </span>
 
-                <span>
-                    Com serviços de acompanhamento de obras via sistemas de monitoramento, análise de viabilidade
-                    técnica dos recursos conveniados e o desempenho de consultoria e assessoria jurídica especializada,
-                    buscamos ser parceiros no ideal de avanço estrutural, econômico
-                    e social, viabilizando o crescimento daqueles que buscam o desenvolvimento e desburocratização.
-                </span>
+                </div>
+            </div>
+            <div class="about-content">
+                <br />
+                <h3 style="color: #e7164f;">O Que Nos Motiva</h3>
+                <div class="paragrafo">
+                    <span>
+                        No ano de 2020, percebemos a necessidade de aprender com as melhores práticas de outras
+                        empresas, bem como, utilizar do <i>networking</i> com outros executivos e empreendedores como
+                        alternativas de consolidação de empreendimentos.
+                        Com essa ideia percebemos a necessidade de integra empresas para apoiar o empresário em momentos
+                        de recessão econômica.
+                    </span>
 
-                <br>
-
-                <a href="index.html#service-box" class="btn-primary">Nossos serviços</a>
-
-                <br>
-                <br>
+                </div>
             </div>
         </div>
 
     </section>
+    <div class="container" id="service-box">
+        <h2 class="service-title">Nossos Parceiros</h2>
+        <div class="parceiros">
+            <div class="parceiro">
+                <a href="http://www.gigamedia.com.br" target="_blank"><img
+                        src="./assets/dist/media/images/gigaBlack.png" alt=" gigamedia"></a>
+                <strong>Fortaleza - CE</strong>
+                <p>Rua João Alves Albuquerque, 252
+                    Fortaleza, CE – Brasil 60.821-730</p>
+            </div>
+
+
+
+            <div class="parceiro">
+                <a href="https://www.fluxusassessoria.com.br" target="_blank"><img
+                        src="./assets/dist/media/images/FluxusBlack.png" alt="fluxus"></a>
+                <strong>São Paulo - SP</strong>
+                <p>Rua Engenheiro Pegado, 945
+                    CEP 03430-003 - São Paulo - Brasil</p>
+            </div>
+            <div class="parceiro">
+                <a href="https://ferreiralimapompei.com.br" target="_blank"><img
+                        src="./assets/dist/media/images/FerreiraBlack.png" alt="ferreira">
+                </a>
+                <strong>São Paulo - SP</strong>
+                <p>Avenida das Nações Unidas, 14.401
+                    Complexo Parque da Cidade | Torre Tarumã</p>
+            </div>
+
+        </div>
+    </div>
 
     <section id="contact" class="contact-back">
         <div class="contact-content">
             <form method="POST" action="mail.php">
-                <h1>CONTATO</h1>
+                <h1>Contato</h1>
 
                 <h5>"O que parece uma simples consulta, o tornará mais competitivo."</h5>
 
@@ -170,7 +204,7 @@
                     placeholder="Nome de sua empresa">
                 <input class="input" type="email" name="email" id="email" placeholder="Seu email">
                 <input class="input" type="text" name="subject" id="subject" placeholder="Assunto da mensagem">
-                <textarea class="input" name="message" id="message" cols="30" rows="10"
+                <textarea class="input" name="message" id="message" rows="3"
                     placeholder="Digite aqui sua mensagem..."></textarea>
                 <button class="btn-secondary left larg" type="submit">Enviar</button>
             </form>
@@ -194,16 +228,16 @@
                     <a href="https://www.instagram.com/ejconsultoriaoficial/" target="_blank"><i class="fa fa-instagram"
                             aria-hidden="true"></i> ejconsultoriaoficial </a>
                     <br>
-                    <a href="mailto:comercial@ejengenharia.com.br">
-                        <i class="fa fa-envelope-o" aria-hidden="true"></i> comercial@ejengenharia.com.br</a>
+                    <a href="mailto:comercial@ejconsultoria.com">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i> comercial@ejconsultoria.com</a>
                     </p>
+                    <span id="cnpj">CNPJ: 22.212.407/0001-15</span>
             </div>
 
 
 
         </div>
 
-        <span id="cnpj">CNPJ: 22.212.407/0001-15</span>
 
         <!-- <a id="123" target="_blank" href="http://www.davicedraz.com" style="float: right; color: white; text-decoration: none">
             <p> <span class="title"><</span><span class="title"> / </span><span class="title">></span> </p>

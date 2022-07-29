@@ -153,7 +153,7 @@
 <section id="contact" class="contact-back">
         <div class="contact-content">
             <form method="POST" action="mail.php">
-                <h1>CONTATO</h1>
+                <h1>Contato</h1>
 
                 <h5>"O que parece uma simples consulta, o tornará mais competitivo."</h5>
 
@@ -161,7 +161,7 @@
                 <input class="input" type="text" name="nome_empresa" id="nome_empresa" placeholder="Nome de sua empresa">
                 <input class="input" type="email" name="email" id="email" placeholder="Seu email">
                 <input class="input" type="text" name="subject" id="subject" placeholder="Assunto da mensagem">
-                <textarea class="input" name="message" id="message" cols="30" rows="10" placeholder="Digite aqui sua mensagem..."></textarea>
+                <textarea class="input" name="message" id="message" rows="3" placeholder="Digite aqui sua mensagem..."></textarea>
 
                 <button class="btn-secondary left larg" type="submit">Enviar</button>
             </form>

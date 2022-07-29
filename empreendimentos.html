@@ -91,7 +91,7 @@
 
     .service-title {
         text-align: center;
-        font-size: 2.1em;
+        font-size: 30px;
         font-family: sans-serif;
         color: gray;
         background-color: white;
@@ -280,7 +280,7 @@
 
         .card-content {
             width: 80%;
-            font-size: 17px;
+            font-size: 24px;
             margin-left: 0;
 
 
@@ -310,9 +310,11 @@
 <body>
 
     <!-- Start Whatsapp Button-->
-    <a class="whatsapp" href="https://web.whatsapp.com/send?phone=5588996710713" target="_blank">
+    <a class="whatsapp mobile" href="https://wa.me/5588989898989" target="_blank">
         <i class="fa fa-whatsapp" aria-hidden="true"></i>
-
+    </a>
+    <a class="whatsapp desktop" href="https://web.whatsapp.com/send?phone=5588996710713" target="_blank">
+        <i class="fa fa-whatsapp" aria-hidden="true"></i>
     </a>
     <!-- End Whatsapp Button-->
 
@@ -386,7 +388,7 @@
         </div>
     </div>
     
-    <h2 class="service-title">Depoimento de nossos clientes</h2>
+    <h2 class="service-title">Depoimento de Nossos Clientes</h2>
     
     <div class="bg">
 
@@ -428,75 +430,12 @@
     </div>
 
     <section class="mobileOnly">
-        <h2 class="service-title">Serviços</h2>
+        <h2 class="service-title">Serviços Especializados</h2>
         <ul class="cards">
-            <li class="cards__item">
-                <div class="card">
-                    <div class="card__image card__image--fence"></div>
-                    <div class="card__content">
-                        <div class="card__title">Planejamento Estratégico</div>
-                        <!-- <p class="card__text"> -->
-                        <ul class="card__text">
-                            <div class="border">
-                                <li class="item-mobile">Plano de negócio</li>
-                                <li class="item-mobile">Modelo de negócio</li>
-                                <li class="item-mobile">Consulta mercadológica/pesquisa de mercado</li>
-                                <li class="item-mobile">Plano de gerenciamento de tempo</li>
-                                <li class="item-mobile">Formação de preços</li>
-                                <li class="item-mobile">Estudo de viabilidade técnica e jurídica</li>
-                                <li class="item-mobile">Estudo de viabilidade econômica e financeira</li>
-                                <li class="item-mobile">Estudo de viabilidade sociambiental</li>
-                                <li class="item-mobile">Avaliação do ponto comercial</li>
-                            </div>
-                        </ul>
-                        <!-- </p> -->
-                        <!-- <button class="btn btn--block card__btn">Button</button> -->
-                    </div>
-                </div>
-            </li>
-            <li class="cards__item">
-                <div class="card">
-                    <div class="card__image card__image--river"></div>
-                    <div class="card__content">
-                        <div class="card__title">Recursos Humanos</div>
-                        <ul class="card__text">
-                            <div class="border">
-                                <li class="item-mobile">Análise e descrição de cargos</li>
-                                <li class="item-mobile">Pesquisa de clima organizacional</li>
-                                <li class="item-mobile">Recrutamento e seleção</li>
-                            </div>
-                        </ul>
-                        <!-- <button class="btn btn--block card__btn">Button</button> -->
-                    </div>
-                </div>
-            </li>
-            <li class="cards__item">
-                <div class="card">
-                    <div class="card__image card__image--record"></div>
-                    <div class="card__content">
-                        <div class="card__title">Gestão e Consultorias</div>
-                        <ul class="card__text">
-                            <div class="border">
-                                <li class="item-mobile">Gestão de financiamento e empréstimos públicos</li>
-                                <li class="item-mobile">Gerenciamento Eletrônico de Documentos (GED)</li>
-                                <li class="item-mobile">Consulta patrimonial</li>
-                                <li class="item-mobile">Gerenciamento de mão de obra especializada, técnica e
-                                    profissional</li>
-                                <li class="item-mobile">Consultoria de implantação e otimização de ponto de comércio
-                                </li>
-                                <li class="item-mobile">Preparação de documentos</li>
-                                <li class="item-mobile">Despacho</li>
-                            </div>
-                        </ul>
-                        <!-- <button class="btn btn--block card__btn">Button</button> -->
-                    </div>
-                </div>
-            </li>
             <li class="cards__item">
                 <div class="card">
                     <img src="./assets/dist/media/images/solucao.jpg">
                     <div class="card__content">
-                        <div class="card__title">Serviços Especializados</div>
                         <ul class="card__text">
                             <div class="border">
                                 <li class="item-mobile">Regularização para promoção ao
@@ -528,14 +467,14 @@
         </ul>
     </section>
     <section class="desktopOnly">
-        <h2 class="service-title">Serviços</h2>
+        <h2 class="service-title">Serviços Especializados</h2>
         <ul>
             <li>
                 <div class="infoRow">
                     <img src="./assets/dist/media/images/solucao.jpg">
                     <ul class="card__text backCard">
 
-                        <h2 class="card__title title-servico" style="text-align: center;">Serviços Especializados</h2>
+                        <!-- <h2 class="card__title title-servico" style="text-align: center;">Serviços Especializados</h2> -->
                         <div class="servico-container">
                             <div class="border"></div>
                             <div>
@@ -646,7 +585,7 @@
     <section id="contact" class="contact-back">
         <div class="contact-content">
             <form method="POST" action="mail.php">
-                <h1>CONTATO</h1>
+                <h1>Contato</h1>
 
                 <h5>"O que parece uma simples consulta, o tornará mais competitivo."</h5>
 
@@ -655,7 +594,7 @@
                     placeholder="Nome de sua empresa">
                 <input class="input" type="email" name="email" id="email" placeholder="Seu email">
                 <input class="input" type="text" name="subject" id="subject" placeholder="Assunto da mensagem">
-                <textarea class="input" name="message" id="message" cols="30" rows="10"
+                <textarea class="input" name="message" id="message" rows="3"
                     placeholder="Digite aqui sua mensagem..."></textarea>
                 <button class="btn-secondary left larg" type="submit">Enviar</button>
             </form>
@@ -679,15 +618,15 @@
                     <a href="https://www.instagram.com/ejconsultoriaoficial/" target="_blank"><i class="fa fa-instagram"
                             aria-hidden="true"></i> ejconsultoriaoficial </a>
                     <br>
-                    <a href="mailto:comercial@ejengenharia.com.br">
-                        <i class="fa fa-envelope-o" aria-hidden="true"></i> comercial@ejengenharia.com.br</a>
+                    <a href="mailto:comercial@ejconsultoria.com">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i> comercial@ejconsultoria.com</a>
                     </p>
+                    <span id="cnpj">CNPJ: 22.212.407/0001-15</span>
             </div>
 
 
         </div>
 
-        <span id="cnpj">CNPJ: 22.212.407/0001-15</span>
 
         <!-- <a id="123" target="_blank" href="http://www.davicedraz.com" style="float: right; color: white; text-decoration: none">
             <p> <span class="title"><</span><span class="title"> / </span><span class="title">></span> </p>
