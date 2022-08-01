@@ -70,7 +70,7 @@ img {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -moz-font-feature-settings: "liga" on;
-    width: 100%
+    width: 90%
 }
 .card:hover .card__image {
     -webkit-filter: contrast(100%);

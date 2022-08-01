@@ -1,0 +1,50 @@
+.owl-carousel {
+text-align: initial;
+font-size: 12px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: flex-end;
+}
+.owl-carousel img{
+    max-width: 120px;
+    height: 118px;
+    border-radius: 10px;
+    filter: grayscale(100%);
+    /* padding-right: 35px; */
+}
+.content-flex{
+    height: 212px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.owl-stage {
+    background-color: #fff;
+}
+
+.owl-item ~ .active {
+    padding-left: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .owl-carousel {
+        font-size: 10px;
+        }
+        .owl-carousel img{
+            max-width: 90px;
+            height: 68px;
+        }
+        .content-flex{
+            height: 190px;
+
+        }
+        .content-text{
+            width: 82%;
+            /* text-align: center; */
+        }
+    .owl-item ~ .active {
+        padding-left: 5px;
+    }
+}
