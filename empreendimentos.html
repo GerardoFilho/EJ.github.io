@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8" />
     <title>EJ | Gestão de Empreendimentos</title>
-    <meta name="author" content="Davi Cedraz">
+    <meta name="author" content="Gerardo Filho">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <meta name="theme-color" content="rgba(158, 158, 158, 0.49)"> -->
 
     <link rel="stylesheet" href="assets/dist/css/style.css">
     <link rel="stylesheet" href="assets/dist/css/reset.css">
@@ -28,6 +27,10 @@
     <link rel="stylesheet" href="assets/dist/css/sections/contact.css">
     <link rel="stylesheet" href="assets/dist/css/sections/float-whatsapp.css">
     <link rel="stylesheet" href="assets/dist/css/sections/slider.css">
+
+    <link rel="stylesheet" href="assets/dist/owlCarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/dist/owlCarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/dist/css/sections/owlCarouselDepoimento.css">
 
 
     <link rel="stylesheet" href="assets/dist/media/icons/css/font-awesome.min.css">
@@ -64,13 +67,13 @@
     }
 
     .presentation-content {
-        background: rgba(0,0,0,0.4) url(assets/dist/media/images/happy.png) fixed;
+        background: rgba(0, 0, 0, 0.4) url(assets/dist/media/images/happy.png) fixed;
         background-blend-mode: darken;
         background-size: cover;
         background-position-y: 30%;
         color: #fff;
         height: 300px;
-        /* padding: 170px 125px; */
+        padding: 50vh 125px;
     }
 
     .presentation div.texto>strong {
@@ -228,6 +231,18 @@
         .card__title {
             margin-bottom: 5px;
         }
+
+        .service-title {
+            font-size: 21px;
+        }
+
+        .presentation-content {
+            padding: 48vh 35px;
+        }
+
+        .texto {
+            font-size: 14px;
+        }
     }
 
     @media (max-width: 768px) {
@@ -282,19 +297,14 @@
             width: 80%;
             font-size: 24px;
             margin-left: 0;
-
-
         }
 
         .card-info-bottom {
             background-size: contain;
         }
 
-
         .border {
-
             margin-left: -20px;
-
         }
 
         .item-mobile {
@@ -302,7 +312,19 @@
         }
 
         .texto {
-            font-size: 12px;
+            font-size: 21px;
+        }
+    }
+
+    @media (max-width: 375px) {
+        .texto {
+            font-size: 16px;
+        }
+    }
+
+    @media (max-width: 320px) {
+        .texto {
+            font-size: 14px;
         }
     }
 </style>
@@ -368,10 +390,11 @@
 
                 <div class="texto">
                     <strong>Suporte a Organizações da Sociedade Civil (OSCs)</strong>
-                    <p> <strong>Pesquisa inédita do Ipea realizada em 2019, mostrou que das mais de 820 mil organizações da
-                        sociedade civil (OSCs) em atividade no Brasil, somente (2,7%) receberam recursos federal entre
-                        2010 e 2018. O que equivale a R$ 118,5 bilhões de reais.</strong></p>
-                    <!-- <a href="#services" class="btn-primary">Nossos Serviços</a> -->
+                    <p> <strong>Pesquisa inédita do Ipea realizada em 2019, mostrou que das mais de 820 mil organizações
+                            da
+                            sociedade civil (OSCs) em atividade no Brasil, somente (2,7%) receberam recursos federal
+                            entre
+                            2010 e 2018. O que equivale a R$ 118,5 bilhões de reais.</strong></p>
                 </div>
 
             </div>
@@ -380,57 +403,34 @@
 
     </section>
 
-    <div class="card-info card-info-top">
-        <div class="card-container">
-            <div class="card-content">
-                <!-- <p>Buscamos o cuidado e a qualidade nas relações diretas com meio ambiente com ênfase em uma melhor qualidade de vida para a comunidade</p> -->
+    <h2 class="service-title">Depoimento de Nossos Clientes</h2>
+
+    <div id="owl-depoimento" class="owl-carousel owl-theme">
+
+        <div class="item content-flex">
+            <img src="assets/dist/media/images/2019.png" alt="resultado-2019">
+            <div class="content-text">
             </div>
         </div>
-    </div>
-    
-    <h2 class="service-title">Depoimento de Nossos Clientes</h2>
-    
-    <div class="bg">
-
-        <div class="slider">
-            <div class="slides">
-                <input type="radio" name="radio-btn" id="radio1">
-                <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
-                <input type="radio" name="radio-btn" id="radio4">
-
-                <div class="slide first">
-                    <img src="assets/dist/media/images/2019.png">
-                </div>
-                <div class="slide">
-                    <img src="assets/dist/media/images/2020.png">
-                </div>
-                <div class="slide">
-                    <img src="assets/dist/media/images/2021.png">
-                </div>
-                <div class="slide">
-                    <img src="assets/dist/media/images/contratual.png">
-                </div>
-
-                <div class="navigation-auto">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                    <div class="auto-btn4"></div>
-                </div>
-
+        <div class="item content-flex">
+            <img src="assets/dist/media/images/2020.png" alt="resultado-2020">
+            <div class="content-text">
             </div>
-            <div class="manual-navigation">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
-                <label for="radio4" class="manual-btn"></label>
+        </div>
+        <div class="item content-flex">
+            <img src="assets/dist/media/images/2021.png" alt="resultado-2021">
+            <div class="content-text">
+            </div>
+        </div>
+        <div class="item content-flex">
+            <img src="assets/dist/media/images/contratual.png" alt="resultado-contratual">
+            <div class="content-text">
             </div>
         </div>
     </div>
 
     <section class="mobileOnly">
-        <h2 class="service-title">Serviços Especializados</h2>
+        <h2 class="service-title" style="font-size: 26px;">Serviços Especializados</h2>
         <ul class="cards">
             <li class="cards__item">
                 <div class="card">
@@ -460,7 +460,6 @@
                                     13.019/2014</li>
                             </div>
                         </ul>
-                        <!-- <button class="btn btn--block card__btn">Button</button> -->
                     </div>
                 </div>
             </li>
@@ -474,7 +473,6 @@
                     <img src="./assets/dist/media/images/solucao.jpg">
                     <ul class="card__text backCard">
 
-                        <!-- <h2 class="card__title title-servico" style="text-align: center;">Serviços Especializados</h2> -->
                         <div class="servico-container">
                             <div class="border"></div>
                             <div>
@@ -507,77 +505,15 @@
                     </ul>
                 </div>
             </li>
-            <!-- <li>
-                <div class="infoRow">
-                    <ul class="card__text backCard">
-                        <h2 class="card__title">Gestão e Consultorias</h2>
-                        <div class="servico-container">
-                            <div class="border"></div>
-                            <div>
-                                <li class="li-left">Gestão de financiamento e empréstimos públicos</li>
-                                <li class="li-left">Gerenciamento Eletrônico de Documentos (GED)</li>
-                                <li class="li-left">Consulta patrimonial</li>
-                                <li class="li-left">Gerenciamento de mão de obra especializada, técnica e profissional
-                                </li>
-                                <li class="li-left">Consultoria de implantação e otimização de ponto de comércio
-                                </li>
-                                <li class="li-left">Preparação de documentos</li>
-                                <li class="li-left">Despacho</li>
-                            </div>
-                    </ul>
-                    <img src="./assets/src/media/images/insurance.jpg">
-                </div>
-            </li>
-            <li>
-                <div class="infoRow">
-                    <img src="./assets/src/media/images/people.jpg">
-                    <ul class="card__text backCard">
-                        <h2 class="card__title">Recursos Humanos</h2>
-                        <div class="servico-container">
-                            <div class="border"></div>
-                            <div>
-                                <li class="li-left">Análise e descrição de cargos</li>
-                                <li class="li-left">Pesquisa de clima organizacional</li>
-                                <li class="li-left">Recrutamento e seleção</li>
-                            </div>
-                    </ul>
-                </div>
-            </li>
-            <li>
-                <div class="infoRow">
-                    <ul class="card__text backCard">
-                        <h2 class="card__title">Planejamento Estratégico</h2>
-                        <div class="servico-container">
-                            <div class="border"></div>
-                            <div>
-                                <li class="li-left">Plano de negócio</li>
-                                <li class="li-left">Modelo de negócio</li>
-                                <li class="li-left">Consulta mercadológica/pesquisa de mercado</li>
-                                <li class="li-left">Plano de gerenciamento de tempo</li>
-                                <li class="li-left">Formação de preços</li>
-                            </div>
-                            <div class="border"></div>
-                            <div>
-                                <li class="li-right">Estudo de viabilidade técnica e jurídica</li>
-                                <li class="li-right">Estudo de viabilidade econômica e financeira</li>
-                                <li class="li-right">Estudo de viabilidade sociambiental</li>
-                                <li class="li-right">Avaliação do ponto comercial</li>
-                            </div>
-                        </div>
-                    </ul>
-                    <img src="./assets/src/media/images/empresa2.jpg">
-                </div>
-            </li> -->
-
         </ul>
     </section>
-    <!--  -->
 
 
     <div class="card-info card-info-bottom">
         <div class="card-container">
             <div class="card-content">
-                <p>A EJ Consultoria conta com uma equipe multidisciplinar de profissionais. Conheça mais <strong><a class="text-link" href="about.html">sobre nós</a></strong></p>
+                <p>A EJ Consultoria conta com uma equipe multidisciplinar de profissionais. Conheça mais <strong><a
+                            class="text-link" href="about.html">sobre nós</a></strong></p>
             </div>
         </div>
     </div>
@@ -601,12 +537,6 @@
         </div>
     </section>
 
-
-    <!-- <section id="map">
-        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d608.7762352143369!2d-38.37354007121604!3d-5.108446572814159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7bbe6cf620f291f%3A0xdb376d3724ae4428!2sR.+Damasceno+Gir%C3%A3o%2C+Morada+Nova+-+CE%2C+62940-000!5e0!3m2!1spt-BR!2sbr!4v1507342105725"
-            width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </section> -->
-
     <footer>
         <div class="footer-content">
 
@@ -627,17 +557,15 @@
 
         </div>
 
-
-        <!-- <a id="123" target="_blank" href="http://www.davicedraz.com" style="float: right; color: white; text-decoration: none">
-            <p> <span class="title"><</span><span class="title"> / </span><span class="title">></span> </p>
-        </a> -->
-
     </footer>
     <script src="assets/dist/js/jquery/jquery-3.2.1.min.js"></script>
     <script src="assets/dist/js/smooth-row.js"></script>
     <script src="assets/dist/js/navbar.js"></script>
     <script src="assets/dist/js/ScrollKeys.js"></script>
     <script src="assets/dist/js/slider.js"></script>
+
+    <script src="assets/dist/owlCarousel/owl.carousel.min.js"></script>
+    <script src="assets/dist/js/owlCarouselDepoimento.js"></script>
 
 </body>
 

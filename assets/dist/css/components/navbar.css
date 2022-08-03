@@ -191,8 +191,9 @@ ul.nav-active {
     left: calc(50% - 5px);
     top: 21px
 }
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 1070px) {
     nav{
+        padding-top: 0;
         background: #021025;
         position: inherit;
         right: 0;
