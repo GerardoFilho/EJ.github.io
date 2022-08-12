@@ -1,48 +1,40 @@
 footer {
-    color: white;
+    color: #fff;
     padding: 30px;
-    background-color: #021016;
+    background-color: #021016
 }
-
 .footer-content {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     text-align: center;
-    font-family: 'OpenSans';
-    font-size: 15px;
+    font-family: OpenSans;
+    font-size: 15px
 }
-
 .footer-content a {
     text-decoration: none;
-    color: #fff;
+    color: #fff
 }
-
 .footer-content a:hover {
-    text-decoration: underline;
+    text-decoration: underline
 }
-
 .footer-content .pipe {
     font-size: 45px;
-    margin: 10px 25px;
+    margin: 10px 25px
 }
-
 footer>span {
-    margin-left: 44.5%;
+    display: flex;
+    justify-content: center;
 }
-
 @media (max-width: 768px) {
     .footer-content .pipe {
-        display: none;
+        display: none
     }
     .footer-content {
         flex-direction: column;
-        align-items: center;
+        align-items: center
     }
     footer {
-        zoom: 80%;
-    }
-    footer>span {
-        margin-left: 27.5%;
+        zoom: 80%
     }
 }

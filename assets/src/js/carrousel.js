@@ -1,17 +1,1 @@
-(function ($) {
-    $(document).ready(function () {
-
-        $('.carroussel').slick({
-            infinite: true,
-            adaptiveHeight: false,
-            autoplay: true,
-            autoplaySpeed: 3000,
-            speed: 800,
-            fade: true,
-            arrows: true,
-            prevArrow: '.presentation-controls #control-left',
-            nextArrow: '.presentation-controls #control-right'
-        });
-
-    });
-})(jQuery);
+!function(e){e(document).ready(function(){e(".carroussel").slick({infinite:!0,adaptiveHeight:!1,autoplay:!0,autoplaySpeed:3e3,speed:800,fade:!0,arrows:!0,prevArrow:".presentation-controls #control-left",nextArrow:".presentation-controls #control-right"})})}(jQuery);

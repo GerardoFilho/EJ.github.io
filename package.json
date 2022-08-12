@@ -1,7 +1,7 @@
 {
-  "name": "EngenhariaJuridica",
+  "name": "ejconsultoria",
   "version": "1.0.0",
-  "description": "Site institucional da empresa Engenharia Juridica",
+  "description": "Site institucional da empresa EJ Consultoria",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/davicedraz/EngenhariaJuridica.git"
+    "url": "git+https://github.com/GerardoFilho/EJ-Engenharia.git"
   },
   "keywords": [],
-  "author": "Davi Cedraz, Leo Jaimesson",
+  "author": "Gerardo Filho",
   "license": "",
   "bugs": {
-    "url": "https://github.com/davicedraz/EngenhariaJuridica/issues"
+    "url": "https://github.com/GerardoFilho/EJ-Engenharia/issues"
   },
-  "homepage": "https://github.com/davicedraz/EngenhariaJuridica#readme",
+  "homepage": "https://github.com/GerardoFilho/EJ-Engenharia#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.7.0",

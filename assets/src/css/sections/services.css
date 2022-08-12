@@ -1,82 +1,60 @@
+#services,
+.services-content {
+    padding-right: 5%;
+    padding-left: 5%
+}
 #services {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
-    margin-top: 5%;
+    margin-top: 5%
 }
-
-.services-container{
+.services-container {
     display: flex;
     flex-wrap: wrap;
-    margin: 0px auto;
+    margin: 0 auto
 }
-
-
-.service{
+.service {
     max-height: 500px;
-    margin-bottom: 5%;
+    margin-bottom: 5%
 }
-
 .services-container div {
-    flex: 1;
+    flex: 1
 }
-
-
-/* .services-container img {
-    max-height: 500px;
-    height: 100%;
-} */
-
-.services-content{
-    font-family: 'OpenSans';
+.services-content {
+    font-family: OpenSans;
     font-size: 1.1em;
-    color: #021016;
-    padding-right: 5%;
-    padding-left: 5%;
+    color: #021016
 }
-
 .services-container img {
-    border-radius: 100px;
+    border-radius: 100px
 }
-
-.services-content ul{
+.services-content ul {
     margin-left: 8%;
-    list-style-type: square;
+    list-style-type: square
 }
-
-.services-content h3{
+.services-content h3 {
     font-size: 1.4em;
     font-weight: 900;
-    margin-left: 5%;
-    
+    margin-left: 5%
 }
-
 .services-content p {
     line-height: 1.5;
     margin-left: 5%;
-    margin-right: 2%;
+    margin-right: 2%
 }
-
-.services-content .btn-primary{
-    margin-left: 5%;
+.services-content .btn-primary {
+    margin-left: 5%
 }
-
 @media (max-width: 768px) {
-
-    .service{
-        max-height: 600px;
+    .service {
+        max-height: 600px
     }
-
-    #services{
-        flex-direction: column;
+    #services {
+        flex-direction: column
     }
-
     .services-container {
         flex-direction: column;
-        zoom: 80%;
+        zoom: 80%
     }
-
-
-} 
+}

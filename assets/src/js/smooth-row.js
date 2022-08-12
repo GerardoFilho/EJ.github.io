@@ -1,10 +1,1 @@
-(function ($) {
-  var $doc = $('html, body');
-
-  $('a').click(function () {
-    $doc.animate({
-      scrollTop: $($.attr(this, 'href')).offset().top
-    }, 700);
-    return false;
-  });
-})(jQuery);
+!function(t){var o=t("html, body");t("a").click(function(){return o.animate({scrollTop:t(t.attr(this,"href")).offset().top},700),!1})}(jQuery);
