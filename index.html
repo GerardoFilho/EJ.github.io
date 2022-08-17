@@ -7,6 +7,12 @@
     <meta name="author" content="EJ Consultoria">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 100px;
+        }
+    </style>
 
     <link rel="stylesheet" type="text/css" href="assets/dist/slick-carrousel/slick/slick.css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -31,6 +37,8 @@
     <link rel="stylesheet" href="assets/dist/css/sections/owlCarousel.css">
     <link rel="stylesheet" href="assets/dist/owlCarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/dist/owlCarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/dist/css/sections/owlCarouselDepoimento.css">
+
 
 
     <link rel="stylesheet" href="assets/dist/media/icons/css/font-awesome.min.css">
@@ -41,7 +49,7 @@
 <body>
 
     <!-- Start Whatsapp Button-->
-    <a class="whatsapp mobile" href="https://wa.me/5588989898989" target="_blank">
+    <a class="whatsapp mobile" href="https://wa.me/5588996710713" target="_blank">
         <i class="fa fa-whatsapp" aria-hidden="true"></i>
     </a>
     <a class="whatsapp desktop" href="https://web.whatsapp.com/send?phone=5588996710713" target="_blank">
@@ -75,13 +83,10 @@
                     <a href="#about" class="hvr-bounce-to-top">Quem Somos</a>
                 </li>
                 <li>
-                    <a href="#service-box" class="hvr-bounce-to-top">Nossos Serviços</a>
+                    <a href="#depoimentos" class="hvr-bounce-to-top">Depoimentos de Clientes</a>
                 </li>
                 <li>
                     <a href="#clientes" class="hvr-bounce-to-top">Nossos Clientes</a>
-                </li>
-                <li>
-                    <a href="#contact" class="hvr-bounce-to-top">Contato</a>
                 </li>
             </ul>
         </div>
@@ -125,7 +130,7 @@
     </section>
 
     <section id="about" class="about-container">
-        <div class="about-content">
+        <div class="about-content" style="height: 38vw;">
             <h3>Quem Somos?</h3>
 
             <p>
@@ -158,50 +163,107 @@
         </div>
     </section>
 
-    <div class="container" id="service-box">
-        <h2 class="service-title">Nossos Serviços</h2>
-        <div class="servicess">
+    <h2 id="depoimentos" class="service-title">Depoimento de Nossos Clientes</h2>
 
+    <div id="owl-depoimento" class="owl-carousel owl-theme">
 
-
-            <div class="service-group">
-                <div class="service-box">
-                    <div class="service-icon service-icon-background"
-                        style="background: rgba(0,0,0,0.4) url(assets/dist/media/images/graphBussines.png); background-blend-mode: darken; background-size: 940px; opacity: 0.85;">
-                        <div class="front-content">
-                            <i class="fa fa-usd" aria-hidden="true"></i>
-                            <h3>Suporte a Empresas Prestadoras de Serviços Públicos</h3>
-                            <p style="color: #FFF;">Para apoiar e tornar seu negócio mais competitivo.</p>
-                        </div>
-                    </div>
-                    <div class="service-box-content" style="background-color: #021016">
-                        <a href="publica.html" class="btn-primary">Ver mais</a>
-
-                    </div>
+        <div class="item-depoimento content-flex-depoimento">
+            <div class="content-apoio">
+                <div class="quote">
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    <p class="linha-horizontal">Eletrocampo Serviços e Construções Ltda</p>               
                 </div>
-
-                <div class="service-box">
-                    <div class="service-icon service-icon-background"
-                        style="background: url(assets/dist/media/images/amor.png); background-size: 940px;">
-                        <div class="front-content">
-                            <i class="fa fa-handshake-o" aria-hidden="true"></i>
-                            <h3>Suporte a Organizações da Sociedade Civil (OSCs)</h3>
-                            <p style="color: #fff;">Junte-se ao nosso time e
-                                transforme sua entidade</p>
-                        </div>
-                    </div>
-                    <div class="service-box-content" style="background-color: #021016">
-                        <a href="empreendimentos.html" class="btn-primary">Ver mais</a>
-                    </div>
+                <p class="eletro">Quero parabenizar a empresa pelo atendimento, a assistência e a atenção que vocês dão aos clientes, um trabalho feito com honestidade e clareza. Tenho certeza que isso influencia muito no sucesso da empresa.</p>
+                <div class="depoimento">
+                    <strong>Alan de Melo Rodrigues </strong>
+                    <span>Analista de Licitação</span>
                 </div>
             </div>
-
         </div>
-
+        
+        <div class="item-depoimento content-flex-depoimento">
+            <div class="content-apoio">
+                <div class="quote">
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    <p class="linha-horizontal">Provale Energia Eireli</p>               
+                </div>
+                <p>Presta um serviço de qualidade e agilidade, buscando captar os melhores resultados financeiros para empresa.</p>
+                <div class="depoimento">
+                    <strong>Francisca Vianiza Feitoza Maciel</strong>
+                    <span>Gerente Administrativo</span>
+                </div>
+            </div>
+        </div>
+        <div class="item-depoimento content-flex-depoimento">
+            <div class="content-apoio">
+                <div class="quote">
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    <p class="linha-horizontal">Associação Pintando SeTEAzul</p>               
+                </div>
+                <p class="seteazul">Não existia conhecimento e nem organização da nossa instituição até conhecer vocês. Não tinhamos noção da importancia de registro de ações e muito menos o que seria captação de recursos e leis para manter a ong em dias e regular.</p>
+                <div class="depoimento">
+                    <strong>Kellyane Carla Chaves</strong>
+                    <span>Fundadora e Presidente</span>
+                </div>
+            </div>
+        </div>
+        <div class="item-depoimento content-flex-depoimento">
+            <div class="content-apoio">
+                <div class="quote">
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    <p class="linha-horizontal apae-mobile">Associação de Pais e Amigos dos Excepcionais de Guaiúba</p>               
+                </div>
+                <p class="apae">Empresa excelente, muita responsabilidade, pontual, com qualidade e exclusividade. Sempre atenta as nossas demandas.</p>
+                <div class="depoimento">
+                    <strong>Ana Lourdes Araújo de Souza </strong>
+                    <span>Diretora da APAE</span>
+                </div>
+            </div>
+        </div>
+        <div class="item-depoimento content-flex-depoimento">
+            <div class="content-apoio">
+                <div class="quote">
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    <p class="linha-horizontal">Fundação do Rim</p>               
+                </div>
+                <p>Em todos os momentos que trabalhamos juntos sempre fomos muito bem atendidos, os consultores sempre muito educados, atenciosos.</p>
+                <div class="depoimento">
+                    <strong>Sâmia Amara Pereira Mitre</strong>
+                    <span>Coordenadora Executiva</span>
+                </div>
+            </div>
+        </div>
+        <div class="item-depoimento content-flex-depoimento">
+            <div class="content-apoio">
+                <div class="quote">
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    <p class="linha-horizontal">AMA Cariri</p>               
+                </div>
+                <p>Através dessa assessoria, conseguimos aprovar nosso primeiro projeto. 
+                    Temos sempre orientações e o apoio necessário para o desenvolvimento das atividades.</p>
+                <div class="depoimento">
+                    <strong>Ana Moésia Magalhães Ribeiro Machado</strong>
+                    <span>Presidente</span>
+                </div>
+            </div>
+        </div>
+        <div class="item-depoimento content-flex-depoimento">
+            <div class="content-apoio">
+                <div class="quote">
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    <p class="linha-horizontal">Centro de Recuperação Leão de Judá Ceará</p>               
+                </div>
+                <p class="juda">A entidade participou, pela primeira vez, de uma Emenda Parlamentar e não tinha experiência de como fazer os procedimentos através do Portal do Governo Federal, bem como a elaboração do Termo de Fomento, dentre outros assuntos. A equipe é muito atenciosa e competente. Recomendo os serviços prestados pela EJ Consultoria.</p>
+                <div class="depoimento">
+                    <strong>Cristiane Silva Ramires</strong>
+                    <span>Presidente</span>
+                </div>
+            </div>
+        </div>
     </div>
 
     <h2 class="service-title" id="clientes">Nossos Clientes</h2>
-    <div class="owl-carousel owl-theme">
+    <div id="owl-clientes" class="owl-carousel owl-theme">
 
         <div class="item content-flex">
             <img src="./assets/dist/media/images/clientes/provale.png">
@@ -415,33 +477,13 @@
 
     </div>
 
-    <section id="contact" class="contact-back">
-        <div class="contact-content">
-            <form method="POST" action="mail.php">
-                <h1>Contato</h1>
-
-                <h5>"O que parece uma simples consulta, o tornará mais competitivo."</h5>
-
-                <input class="input" type="text" name="nome" id="nome" placeholder="Nome completo">
-                <input class="input" type="text" name="nome_empresa" id="nome_empresa"
-                    placeholder="Nome de sua empresa">
-                <input class="input" type="email" name="email" id="email" placeholder="Seu email">
-                <input class="input" type="text" name="subject" id="subject" placeholder="Assunto da mensagem">
-                <textarea class="input" name="message" id="message" rows="3"
-                    placeholder="Digite aqui sua mensagem..."></textarea>
-
-                <button class="btn-secondary left larg" type="submit">Enviar</button>
-            </form>
-        </div>
-    </section>
-
     <footer>
         <div class="footer-content">
 
             <div class="address">
 
                 <a href="tel:88996710713">
-                    <i class="fa fa-whatsapp" aria-hidden="true"></i> (88) 9 96710713
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i> (88) 996710713
                     <br>
                     <a href="https://www.instagram.com/ejconsultoriaoficial/" target="_blank"><i class="fa fa-instagram"
                             aria-hidden="true"></i> ejconsultoriaoficial </a>
@@ -461,10 +503,11 @@
     <script src="assets/dist/slick-carrousel/slick/slick.min.js"></script>
     <script src="assets/dist/js/navbar.js"></script>
     <script src="assets/dist/js/carrousel.js"></script>
-    <script src="assets/dist/js/smooth-row.js"></script>
     <script src="assets/dist/js/ScrollKeys.js"></script>
     <script src="assets/dist/owlCarousel/owl.carousel.min.js"></script>
     <script src="assets/dist/js/owlCarousel.js"></script>
+    <script src="assets/dist/js/owlCarouselDepoimento.js"></script>
+
 
 </body>
 

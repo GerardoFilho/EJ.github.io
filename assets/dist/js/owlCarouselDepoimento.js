@@ -3,14 +3,14 @@ $(document).ready(function () {
     items: 1,
     loop: true,
     autoplay: true,
-    autoplayTimeout: 4000,
+    autoplayTimeout: 5000,
     // autoplayHoverPause: true,
   });
   $("#owl-depoimento").owlCarousel({
     items: 1,
     loop: true,
     autoplay: true,
-    autoplayTimeout: 4000,
+    autoplayTimeout: 5000,
     // autoplayHoverPause: true,
   });
 });
