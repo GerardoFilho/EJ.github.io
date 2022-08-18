@@ -49,10 +49,19 @@ align-items: flex-end;
         }
         .content-text{
             width: 82%;
+            font-family: 'Montserrat', 'sans-serif';
             /* text-align: center; */
         }
         .owl-stage-outer{
             height: 24vh;
+        }
+    /* .owl-item ~ .active {
+        padding-left: 5px;
+    } */
+}
+@media screen and (max-width: 820px) {
+        .owl-stage-outer{
+            height: 21vh;
         }
     /* .owl-item ~ .active {
         padding-left: 5px;

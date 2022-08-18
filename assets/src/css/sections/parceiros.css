@@ -39,7 +39,7 @@ p.text-parceiro{
     justify-content: space-around;
     align-items: center;
     margin-bottom: 20px;
-    font-family: OpenSans
+    font-family: 'Montserrat', 'sans-serif';
 }
 .parceiro-01-background {
     background: rgba(0,0,0,0.5) url(../../media/images/gigaBackground.png);

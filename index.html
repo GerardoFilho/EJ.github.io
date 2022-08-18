@@ -12,6 +12,79 @@
             scroll-behavior: smooth;
             scroll-padding-top: 100px;
         }
+
+        .quem-somos {
+            height: 38vw;
+        }
+
+        .dropbtn {
+            background-color: transparent;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: transparent;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown-content-fixed {
+            background-color: #021025;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 0px 12px 18px !important;
+            width: 20vw;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: transparent;
+            color: #e7164f
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: transparent;
+            cursor: pointer;
+        }
+        @media screen and (max-width: 1070px) {
+            .dropdown-content {
+                position: initial;
+            }
+            .dropdown-content a {
+                padding-left: 0 !important;
+                width: 100%;
+                text-align: center;
+            }
+            .dropdown:hover .dropdown-content {
+                display: block;
+                width: 100vw;
+            }
+            .nav-content a {
+                text-align: center;
+            }
+        }
+        @media screen and (max-width: 820px) {
+            .quem-somos {
+                height: 72vw;
+            }
+        }
     </style>
 
     <link rel="stylesheet" type="text/css" href="assets/dist/slick-carrousel/slick/slick.css" />
@@ -75,7 +148,7 @@
             </div>
         </div>
         <div class="navbarContainer">
-            <ul class="nav-content nav-container">
+            <ul class="nav-content nav-container dropdown-menu">
                 <li>
                     <a href="#top" class="hvr-bounce-to-top">Início</a>
                 </li>
@@ -87,6 +160,13 @@
                 </li>
                 <li>
                     <a href="#clientes" class="hvr-bounce-to-top">Nossos Clientes</a>
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn hvr-bounce-to-top">Nossos Serviços</a>
+                    <div id="dp-content" class="dropdown-content">
+                        <a href="publica.html">Suporte a Empresas</a>
+                        <a href="empreendimentos.html">Suporte a OSCs</a>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -130,7 +210,7 @@
     </section>
 
     <section id="about" class="about-container">
-        <div class="about-content" style="height: 38vw;">
+        <div class="about-content quem-somos">
             <h3>Quem Somos?</h3>
 
             <p>
@@ -171,23 +251,26 @@
             <div class="content-apoio">
                 <div class="quote">
                     <i class="fa fa-quote-left" aria-hidden="true"></i>
-                    <p class="linha-horizontal">Eletrocampo Serviços e Construções Ltda</p>               
+                    <p class="linha-horizontal">Eletrocampo Serviços e Construções Ltda</p>
                 </div>
-                <p class="eletro">Quero parabenizar a empresa pelo atendimento, a assistência e a atenção que vocês dão aos clientes, um trabalho feito com honestidade e clareza. Tenho certeza que isso influencia muito no sucesso da empresa.</p>
+                <p class="eletro">Quero parabenizar a empresa pelo atendimento, a assistência e a atenção que vocês dão
+                    aos clientes, um trabalho feito com honestidade e clareza. Tenho certeza que isso influencia muito
+                    no sucesso da empresa.</p>
                 <div class="depoimento">
                     <strong>Alan de Melo Rodrigues </strong>
                     <span>Analista de Licitação</span>
                 </div>
             </div>
         </div>
-        
+
         <div class="item-depoimento content-flex-depoimento">
             <div class="content-apoio">
                 <div class="quote">
                     <i class="fa fa-quote-left" aria-hidden="true"></i>
-                    <p class="linha-horizontal">Provale Energia Eireli</p>               
+                    <p class="linha-horizontal">Provale Energia Eireli</p>
                 </div>
-                <p>Presta um serviço de qualidade e agilidade, buscando captar os melhores resultados financeiros para empresa.</p>
+                <p>Presta um serviço de qualidade e agilidade, buscando captar os melhores resultados financeiros para
+                    empresa.</p>
                 <div class="depoimento">
                     <strong>Francisca Vianiza Feitoza Maciel</strong>
                     <span>Gerente Administrativo</span>
@@ -198,9 +281,11 @@
             <div class="content-apoio">
                 <div class="quote">
                     <i class="fa fa-quote-left" aria-hidden="true"></i>
-                    <p class="linha-horizontal">Associação Pintando SeTEAzul</p>               
+                    <p class="linha-horizontal">Associação Pintando SeTEAzul</p>
                 </div>
-                <p class="seteazul">Não existia conhecimento e nem organização da nossa instituição até conhecer vocês. Não tinhamos noção da importancia de registro de ações e muito menos o que seria captação de recursos e leis para manter a ong em dias e regular.</p>
+                <p class="seteazul">Não existia conhecimento e nem organização da nossa instituição até conhecer vocês.
+                    Não tinhamos noção da importancia de registro de ações e muito menos o que seria captação de
+                    recursos e leis para manter a ong em dias e regular.</p>
                 <div class="depoimento">
                     <strong>Kellyane Carla Chaves</strong>
                     <span>Fundadora e Presidente</span>
@@ -211,9 +296,10 @@
             <div class="content-apoio">
                 <div class="quote">
                     <i class="fa fa-quote-left" aria-hidden="true"></i>
-                    <p class="linha-horizontal apae-mobile">Associação de Pais e Amigos dos Excepcionais de Guaiúba</p>               
+                    <p class="linha-horizontal apae-mobile">Associação de Pais e Amigos dos Excepcionais de Guaiúba</p>
                 </div>
-                <p class="apae">Empresa excelente, muita responsabilidade, pontual, com qualidade e exclusividade. Sempre atenta as nossas demandas.</p>
+                <p class="apae">Empresa excelente, muita responsabilidade, pontual, com qualidade e exclusividade.
+                    Sempre atenta as nossas demandas.</p>
                 <div class="depoimento">
                     <strong>Ana Lourdes Araújo de Souza </strong>
                     <span>Diretora da APAE</span>
@@ -224,9 +310,10 @@
             <div class="content-apoio">
                 <div class="quote">
                     <i class="fa fa-quote-left" aria-hidden="true"></i>
-                    <p class="linha-horizontal">Fundação do Rim</p>               
+                    <p class="linha-horizontal">Fundação do Rim</p>
                 </div>
-                <p>Em todos os momentos que trabalhamos juntos sempre fomos muito bem atendidos, os consultores sempre muito educados, atenciosos.</p>
+                <p>Em todos os momentos que trabalhamos juntos sempre fomos muito bem atendidos, os consultores sempre
+                    muito educados, atenciosos.</p>
                 <div class="depoimento">
                     <strong>Sâmia Amara Pereira Mitre</strong>
                     <span>Coordenadora Executiva</span>
@@ -237,9 +324,9 @@
             <div class="content-apoio">
                 <div class="quote">
                     <i class="fa fa-quote-left" aria-hidden="true"></i>
-                    <p class="linha-horizontal">AMA Cariri</p>               
+                    <p class="linha-horizontal">AMA Cariri</p>
                 </div>
-                <p>Através dessa assessoria, conseguimos aprovar nosso primeiro projeto. 
+                <p>Através dessa assessoria, conseguimos aprovar nosso primeiro projeto.
                     Temos sempre orientações e o apoio necessário para o desenvolvimento das atividades.</p>
                 <div class="depoimento">
                     <strong>Ana Moésia Magalhães Ribeiro Machado</strong>
@@ -251,9 +338,12 @@
             <div class="content-apoio">
                 <div class="quote">
                     <i class="fa fa-quote-left" aria-hidden="true"></i>
-                    <p class="linha-horizontal">Centro de Recuperação Leão de Judá Ceará</p>               
+                    <p class="linha-horizontal">Centro de Recuperação Leão de Judá Ceará</p>
                 </div>
-                <p class="juda">A entidade participou, pela primeira vez, de uma Emenda Parlamentar e não tinha experiência de como fazer os procedimentos através do Portal do Governo Federal, bem como a elaboração do Termo de Fomento, dentre outros assuntos. A equipe é muito atenciosa e competente. Recomendo os serviços prestados pela EJ Consultoria.</p>
+                <p class="juda">A entidade participou, pela primeira vez, de uma Emenda Parlamentar e não tinha
+                    experiência de como fazer os procedimentos através do Portal do Governo Federal, bem como a
+                    elaboração do Termo de Fomento, dentre outros assuntos. A equipe é muito atenciosa e competente.
+                    Recomendo os serviços prestados pela EJ Consultoria.</p>
                 <div class="depoimento">
                     <strong>Cristiane Silva Ramires</strong>
                     <span>Presidente</span>

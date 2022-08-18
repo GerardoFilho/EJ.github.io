@@ -23,10 +23,12 @@ function(a) {
 		function n() {
 			a("nav").fadeIn(), a("nav").addClass("nav-fixed")
 			a("nav").fadeIn(), a("#logo").addClass("logo-fixed")
+			a("nav").fadeIn(), a("#dp-content").addClass("dropdown-content-fixed")
 		}
 		function o() {
             a("nav").fadeIn(), a("nav").removeClass("nav-fixed")
             a("nav").fadeIn(), a("#logo").removeClass("logo-fixed")
+			a("nav").fadeIn(), a("#dp-content").removeClass("dropdown-content-fixed")
 		}
 	})
 }(jQuery);

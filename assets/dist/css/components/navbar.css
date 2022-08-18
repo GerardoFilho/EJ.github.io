@@ -29,7 +29,7 @@ nav {
     /* position: absolute; */
     align-items: center;
     flex-wrap: wrap;
-    font-family: OpenSans;
+    font-family: 'Montserrat';
     font-size: 15px;
     z-index: 3;
 }
@@ -192,6 +192,9 @@ ul.nav-active {
     top: 21px
 }
 @media screen and (max-width: 1070px) {
+    ul.nav-active {
+        overflow: hidden;
+    }
     nav{
         padding-top: 0;
         background: #021025;

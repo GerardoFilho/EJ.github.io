@@ -8,7 +8,7 @@ footer {
     justify-content: center;
     align-items: flex-start;
     text-align: center;
-    font-family: OpenSans;
+    font-family: 'Montserrat', 'sans-serif';;
     font-size: 15px
 }
 .footer-content a {

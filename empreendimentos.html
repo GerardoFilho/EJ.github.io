@@ -8,6 +8,76 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <style>
+        .dropbtn {
+            background-color: transparent;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: transparent;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown-content-fixed {
+            background-color: #021025;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 0px 12px 18px !important;
+            width: 20vw;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: transparent;
+            color: #e7164f
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 1070px) {
+            .dropdown-content {
+                position: initial;
+            }
+
+            .dropdown-content a {
+                padding-left: 0 !important;
+                width: 100%;
+                text-align: center;
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+                width: 100vw;
+            }
+
+            .nav-content a {
+                text-align: center;
+            }
+        }
+    </style>
+
     <link rel="stylesheet" href="assets/dist/css/style.css">
     <link rel="stylesheet" href="assets/dist/css/reset.css">
 
@@ -95,7 +165,7 @@
     .service-title {
         text-align: center;
         font-size: 30px;
-        font-family: sans-serif;
+        font-family: 'Montserrat sans-serif';
         color: gray;
         background-color: white;
         margin-top: 0;
@@ -373,6 +443,13 @@
                 </li>
                 <li>
                     <a href="index.html#clientes" class="hvr-bounce-to-top">Nossos Clientes</a>
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn hvr-bounce-to-top">Nossos Serviços</a>
+                    <div id="dp-content" class="dropdown-content">
+                        <a href="publica.html">Suporte a Empresas</a>
+                        <a href="#presentation">Suporte a OSCs</a>
+                    </div>
                 </li>
             </ul>
         </div>

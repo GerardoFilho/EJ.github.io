@@ -42,6 +42,7 @@ align-items: flex-end;
         }
         .content-text{
             width: 82%;
+            font-family: 'Montserrat', 'sans-serif';
             /* text-align: center; */
         }
     .owl-item ~ .active {
