@@ -65,7 +65,11 @@
     .presentation div.texto>p {
         font-size: 1em
     }
-    .presentation-content, .presentation-content-index {
+    .presentation-content{
         padding: 120px 35px
+    }
+    .presentation-content-index{
+        padding: 33vh 35px
+
     }
 }
