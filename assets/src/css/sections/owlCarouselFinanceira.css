@@ -1,0 +1,15 @@
+.content-flex-financeiro{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.7);
+    padding: 21px 0;
+}
+
+#owl-resultado .item-financeiro img{
+    display: block;
+    width: 90%;
+    align-self: center;
+    height: auto;
+    max-width: 800px;
+    border-radius: 10px;
+}

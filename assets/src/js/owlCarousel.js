@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $(".owl-carousel").owlCarousel({
+  $("#owl-clientes").owlCarousel({
     items: 6,
     loop: true,
     autoplay: true,

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <title>EJ Consultoria</title>
-    <meta name="author" content="Gerardo Filho">
+    <meta name="author" content="EJ">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="rgba(158, 158, 158, 0.49)">

@@ -56,13 +56,25 @@ header {
     z-index: 20;
     padding-top: 0;
 }
-@media screen and (max-width: 1070px) {
+@media screen and (max-width: 913px) {
     header {
         zoom: 80%
     }
     .logo-content {
         zoom: 33%;
         padding-left: 24rem;
+        padding-top: 0;
+        
+    }
+}
+
+@media screen and (max-width: 890px) {
+    header {
+        zoom: 80%
+    }
+    .logo-content {
+        zoom: 25%;
+        padding-left: 160px;
         padding-top: 0;
         
     }
